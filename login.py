@@ -92,7 +92,7 @@ transaction.commit()
 
     '''
     
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from sqlalchemy import create_engine, Column, Integer, String
@@ -155,18 +155,17 @@ def submit_form(data: LoginData):
 
 @app.post('/signUp')
 def signUp_form(data: SignupData):
-    print(f"Recieved Sign in data: {data}")
     with SessionLocal() as session:
-        '''existing_user = session.query(User).filter(User.email == data.email).first()
+        print(f"Recieved Sign in data: {data}")
+        existing_user = session.query(User).filter(User.email == data.email).first()
         if existing_user:
             print("User with the same email already exists.")
-            raise HTTPException(status_code=400, detail="User with the same email already exists")'''
+            raise HTTPException(status_code=400, detail="User with the same email already exists")
         
         user = User(username=data.username, email=data.email, password=data.password)
         session.add(user)
         session.commit()
         print("Sign up successful")
-        print(f"Received form data: {data}")
         return {"message": "Sign up successful"}
 
 @app.get('/')
