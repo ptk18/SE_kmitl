@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!---for icons (menu icon, dropdown arrow)-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!---for font---->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Cabin&family=Gabarito&family=Mitr:wght@400;500&family=Open+Sans:wght@500;600&family=Rubik&display=swap" rel="stylesheet">
+
+<!----our navbar css----->
+<link rel="stylesheet" href="frame.css">
+
+<link rel="stylesheet" href="">
+<title>Test</title>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <div class="SELogo">
+        <a href="#home" ><img src="/images/se (1).png" alt="SE logo"></a>
+    </div>
+    <div class="middleNavTabs">
+        <div class="program">
+            <button class="programBtn hidden">Program<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
+                <div class="program-content">
+                    <a href="#SE"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Software Engineering</a>
+                    <a href="#SE2022"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Software Engineering 2022</a>
+                    <a href="#glasgow"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Double Degree Glasgow</a>
+                    <a href="#studyabroad"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Exchange Program</a>
+                    <a href="#intership"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Interships</a>
+                </div>
+        </div>
+            <a href="#admission">Admission</a>
+            <div class="news">
+                <button class="newsBtn hidden">News<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
+                <div class="news-content">
+                    <a href="#events"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Events</a>
+                    <a href="#news_announce"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>News & Announcements</a>
+                    <a href="#studentLife"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Student Life</a>
+                </div>
+            </div>
+            <a href="#forum">Forum</a>
+
+    </div>
+    <div class="rightNavTabs">
+        <div class="innerRightNavTabs">
+            <a href="#apply" class="nav-link">Apply</a>
+            <a href="#FAQ" class="nav-link">FAQ</a>
+            <a href="#search" class="nav-link searching">Search<i class="fa fa-search" style="padding-left:6px;"></i></a>
+            <form style="display: none;" class="search-form ">
+                <input type="text" name="search" placeholder="Enter Keywords">
+                <a href="#search" style="border-bottom: none;"><i class="fa fa-search " id="searchBtn"></i></a>
+            </form>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
+<!------------Body Container---------------->
+<div id="show_bodyBg">
+
+</div>
+<div style="height: 200px;"></div>
+
+
+<!----------Footer Section------------>
+<footer class="footer">
+    <div class="footer-ultimate">
+        <div class="footer-container">
+            <div class="leftSide">
+                <div class="leftSide-container">
+                    <div class="SchoolLogo">
+                        <img src="/images/seWithBg.png" alt="Logo">
+                    </div>
+                    <button class="forumBtn">FORUM</button>
+                    <div class="social-icons">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-envelope"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rightSide">
+                <div class="rightSide-container">
+                    <div class="categories1">
+                        <h4>Information</h4>
+                        <div class="footer-infomation-content">
+                            <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Program</a>
+                            <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Admission</a>
+                            <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="categories2">
+                        <h4>Quick Links</h4>
+                        <div class="footer-quickLinks-content">
+                            <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>KMITL</a>
+                            <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>SIIE</a>
+                            <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>KMITL Library</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Software Engineering, King Mongkut's Institute of Technology Ladkrabang</p>
+    </div>
+    
+    
+    
+</footer>
+
+<script src="frame.js"></script>
+</body>
+</html>

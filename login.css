@@ -1,0 +1,231 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: orange;
+}
+
+.container {
+  background-color: white;
+  padding: 35px 50px;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 13px;
+  box-shadow: 20px 30px 25ps rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 50%;
+  width: 1px; /* Adjust the width as needed */
+  background-color: rgb(96, 93, 93); /* Adjust the color as needed */
+}
+
+h1 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+label {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input {
+  font-weight: 400;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1.2px solid rgb(150, 127, 84);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.submitBtn {
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 15px;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.button {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.button2 {
+  width: 200px;
+  padding: 10px 10px;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.center_vertical {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+input:focus {
+  outline: none;
+  border-color: rgb(133, 115, 115);
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 80%;
+    top: 35%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 80%;
+    top: 35%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container::before {
+    display: none;
+  }
+
+  .center_vertical {
+    transform: translate(-85%, 60%);
+  }
+  .container {
+    height: 80vh;
+    transform: translate(-50%, -35%);
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.sign-up {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.SignUp-container{
+  padding: 20px;
+  
+}
+.SignUp-container input[type=text], .SignUp-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+.SignUp-container input[type=text]:focus, .SignUp-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.signupbtn{
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 15px;
+  width: 100%;
+  padding: 5px 10px;
+}

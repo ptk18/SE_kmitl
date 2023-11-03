@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!---for icons (menu icon, dropdown arrow)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/31ced76bc2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!---for font---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Cabin&family=Gabarito&family=Mitr:wght@400;500&family=Open+Sans:wght@500;600&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----our all css----->
+    <link rel="stylesheet" href="/frame.css" />
+    <link rel="stylesheet" href="/login.css" />
+
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="SELogo">
+        <a href="#home"><img src="images/se (1).png" alt="SE logo" /></a>
+      </div>
+      <div class="middleNavTabs">
+        <div class="program">
+          <button class="programBtn hidden">
+            Program<i class="fa fa-caret-down" style="padding-left: 6px"></i>
+          </button>
+          <div class="program-content">
+            <a href="#SE"
+              ><i
+                class="fa fa-caret-right"
+                style="padding-right: 6px; color: rgb(242, 168, 8)"
+              ></i
+              >Software Engineering</a
+            >
+            <a href="#SE2022"
+              ><i
+                class="fa fa-caret-right"
+                style="padding-right: 6px; color: rgb(242, 168, 8)"
+              ></i
+              >Software Engineering 2022</a
+            >
+            <a href="#glasgow"
+              ><i
+                class="fa fa-caret-right"
+                style="padding-right: 6px; color: rgb(242, 168, 8)"
+              ></i
+              >Double Degree Glasgow</a
+            >
+            <a href="#studyabroad"
+              ><i
+                class="fa fa-caret-right"
+                style="padding-right: 6px; color: rgb(242, 168, 8)"
+              ></i
+              >Exchange Program</a
+            >
+            <a href="#intership"
+              ><i
+                class="fa fa-caret-right"
+                style="padding-right: 6px; color: rgb(242, 168, 8)"
+              ></i
+              >Interships</a
+            >
+          </div>
+        </div>
+        <a href="#admission">Admission</a>
+        <div class="news">
+          <button class="newsBtn hidden">
+            News<i class="fa fa-caret-down" style="padding-left: 6px"></i>
+          </button>
+          <div class="news-content">
+            <a href="#events"
+              ><i
+                class="fa fa-caret-right"
+                style="padding-right: 6px; color: rgb(242, 168, 8)"
+              ></i
+              >Events</a
+            >
+            <a href="#news_announce"
+              ><i
+                class="fa fa-caret-right"
+                style="padding-right: 6px; color: rgb(242, 168, 8)"
+              ></i
+              >News & Announcements</a
+            >
+            <a href="#studentLife"
+              ><i
+                class="fa fa-caret-right"
+                style="padding-right: 6px; color: rgb(242, 168, 8)"
+              ></i
+              >Student Life</a
+            >
+          </div>
+        </div>
+        <a href="#forum">Forum</a>
+      </div>
+      <div class="rightNavTabs">
+        <div class="innerRightNavTabs">
+          <a href="#apply" class="nav-link">Apply</a>
+          <a href="#FAQ" class="nav-link">FAQ</a>
+          <a href="#search" class="nav-link searching"
+            >Search<i class="fa fa-search" style="padding-left: 6px"></i
+          ></a>
+          <form style="display: none" class="search-form">
+            <input type="text" name="search" placeholder="Enter Keywords" />
+            <a href="#search" style="border-bottom: none"
+              ><i class="fa fa-search" id="searchBtn"></i
+            ></a>
+          </form>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!------------Body Container---------------->
+    <div class="container">
+      
+        <div>
+          <h1>Log In</h1>
+          <form id="login-form" action="/submit" method="post">
+            <label for="email">Email:</label> <br>
+            <input type="email" id="email" name="email" required> <br>
+
+            <label for="password">Password:</label> <br>
+            <input type="password" id="password" name="password" required> <br>
+            <button type="submit" class="submitBtn">Log In</button>
+            <p>Forgot Password?</p>
+        </form>
+        </div>
+        <div class="center_vertical">
+          <h1>Let's Get Started!</h1>
+          <button id="createAccount" class="button2" onclick="document.getElementById('id01').style.display='block'">CREATE AN ACCOUNT</button>
+        </div>
+   
+    </div>
+
+    <!------------Sign Up---------------->
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form id="sign-up" class="sign-up" action="" method="post">
+        <div class="SignUp-container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="username">User Name</label><br>
+          <input type="text" placeholder="User Name" name="username" required><br>
+
+          <label for="email">Email</label><br>
+          <input type="text" placeholder="Enter Email" name="email" required><br>
+    
+          <label for="password">Password</label> <br>
+          <input type="password" placeholder="Enter Password" name="password" required><br>
+    
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    
+          <div class="clearfix">
+            <button type="submit" class="signupbtn" id="signupBtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="/frame.js"></script>
+    <script src="/login.js"></script>
+    <script src="/signup.js" defer></script>
+    
+  </body>
+</html>

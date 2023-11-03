@@ -1,0 +1,250 @@
+/* Body CSS */
+.show_bodyBg {
+    background:#FEFEFE;
+    width: 100%;
+    background-size: cover;
+    color: #58585A;
+    padding-top: 50px;
+}
+
+/* Overview CSS session */
+.overview{
+    border-bottom: 1px solid #58585a21;
+    padding-bottom: 20px;
+}
+.overview-first-row {
+    display: flex;
+}
+.about-program {
+    flex: 6;
+    padding: 80px 20px 20px 60px;
+}
+.about-program h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    color: #c9340f;
+}
+.program-video{
+    flex:6;
+    padding: 50px 60px 20px 20px;
+    text-align: center;
+}
+.video {
+    border-radius: 5px;
+    box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
+    width: 400px; 
+    height: 225px;
+}
+.overview-second-row{
+    padding-top: 20px;
+    display: flex;
+    background-color: lightgoldenrodyellow;
+    padding-bottom: 20px;
+}
+.logos{
+    flex: 10;
+
+}
+.logos-container{
+
+    width: 100%;
+    display: flex;
+}
+.SE-SIIE{
+
+    flex: 6;
+    display: flex;
+    justify-content: space-around;
+}
+.Fight-kmitl{
+    flex: 6;
+    display: flex;
+    justify-content: space-around;
+
+}
+.logos-container img{
+    width: 100px;
+    height: 70px;
+
+    padding-left: 10px;
+    
+}
+
+.apply-button{
+    flex: 2;
+    padding: 20px 60px 20px 20px;
+
+
+}
+.applyBtn {
+    color: #FEFEFE;
+    background-color: #F04E25;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Mitr', sans-serif;
+    box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
+}
+
+/* responsive overview session */
+@media screen and (max-width: 600px) {
+    .show_bodyBg {
+        padding-top: 20px;
+    }
+    .overview-first-row {
+        display: block;
+    }
+    .about-program {
+        padding: 0px 25px 20px 25px;
+    }
+    .about-program h2 {
+        font-size: 19px;
+    }
+    .program-video{
+        padding: 30px 20px 20px 20px;
+    }
+    .video {
+        border-radius: 5px;
+        box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
+        width: 300px; 
+        height: 210px;
+    }
+    .overview-second-row{
+        padding-top: 20px;
+        display: block;
+        width: 100%;  
+        background-color: lightgoldenrodyellow;
+    }
+    .logos-container{
+        display: block;
+    }
+    .SE-SIIE{
+        padding-bottom: 5px;
+        justify-content: center;
+    }
+    .Fight-kmitl{
+        padding-top: 5px;
+        justify-content: center;
+    }
+    .logos-container img{
+        width: 70px;
+        height: 40px;
+        padding:10px;
+    }
+    .apply-button{
+        padding: 20px 60px 20px 60px;
+        text-align: center;
+    }
+}
+
+/* News CSS session */
+.news-session{
+    display: flex;
+}
+.featuring-news{
+    flex:9;
+}
+.news-section-header{
+    display: flex;
+    padding-left: 10px;
+    
+}
+.news-mini-header{
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0.8;
+}
+.all-news-header{
+    border-left: 2px solid #58585a39;
+    padding: 8px 0px 0px 7px;
+}
+.all-news{
+
+    text-decoration: none;
+}
+.news-cards {
+    display: flex;
+    margin-left: 10px;
+}
+.card{
+    flex: 4;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 10px;
+    height: 190px;
+}
+.news-cards .card img {
+    width: 150px;
+    height: 120px;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.card-container {
+    padding: 2px 16px;
+    height: 70px;
+}
+.card-container .news-title b{
+    font-size: 11px;
+}
+.news-title {
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.card-container p{
+    font-size: 8px;
+    opacity: 0.8;
+}
+.featuring-events{
+    flex:3;
+    border-left: 2px solid #c9340f;
+}
+.events-section-header{
+    display: flex;    
+}
+.events-mini-header{
+    padding: 0px 10px 0px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0.8;
+}
+.all-events-header{
+    border-left: 2px solid #58585a39;
+    padding: 8px 0px 0px 7px;
+}
+.all-events{
+
+    text-decoration: none;
+}
+.event{
+    display: flex;
+}
+.event-date-icon{
+    flex: 2;
+    padding: 3px;
+    background-color: lightcoral;
+}
+.event-date-icon-container{
+    
+    background: limegreen;
+    text-align: center;
+    
+}
+.event-date-icon-mth{
+    font-size: 12px;
+    font-weight: bold;
+    background-color: red;
+}
+.event-date-icon-day{
+    font-size: 10px;
+    background-color: yellow;
+}
+.about-event {
+    flex: 10;
+    background-color: lightblue;
+}
