@@ -1,0 +1,16 @@
+.bodyContainer{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+img{
+    width: 100%;
+}
+
+p{
+    text-align: justify;
+}
+
+.fontstyle{
+  font-family: 'Mitr', sans-serif;
+}

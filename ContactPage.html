@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!---for font---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Cabin&family=Gabarito&family=Mitr:wght@400;500&family=Open+Sans:wght@500;600&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/nav.css" />
+    <link rel="stylesheet" href="src/ContactPage.css" />
+  </head>
+  <body>
+
+    <!--For Content-->
+
+    <div class="container">
+      <h1>GET IN TOUCH</h1>
+      <form action="/" method="GET">
+        <div class="row">
+          <div class="column">
+            <label for="fname" class="required">First name:</label>
+            <input type="text" id="fname" name="fname" required />
+          </div>
+          <div class="column">
+            <label for="lname" class="required">Last name:</label>
+            <input type="text" id="lname" name="lname" required  />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <label for="email" class="required">Email:</label>
+            <input type="text" id="email" name="email" required  />
+          </div>
+          <div class="column">
+            <label for="phno" class="required">Ph no:</label>
+            <input type="tel" id="phno" name="phno" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="description" class="required">Your Message:</label>
+            <textarea id="message" rows="7" required ></textarea>
+          </div>
+        </div>
+        <div class="button-container">
+          <button >Submit</button>
+          <button><a href="index.html">Home</a></button>
+        </div>
+      </form>
+    </div>
+    <div class="error"></div>
+    <script src="src/nav.js"></script>
+    <script src="src/ContactPage.js"></script>
+  </body>
+</html>

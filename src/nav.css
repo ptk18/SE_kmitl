@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Mitr', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .topnav {
@@ -14,19 +14,17 @@ body {
     z-index: 99;
 }
 .SELogo{
-    flex: 2;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     bottom: 0;
 }
 .SELogo img {
-    width: 13em;
-    height: 2.5em;
-    margin-top: 0.5em;
+    width: 120px;
+    height: 32px;
+    margin-top: 5px;
 }
-
-
 .middleNavTabs{
     flex: 7;
     display: flex;
@@ -45,7 +43,7 @@ body {
 }
 
 .middleNavTabs a{
-    padding: 1em 0.8em;
+    padding: 12px 12px;
 }
 .innermiddleNavTabs a {
     margin: 0 auto;
@@ -57,7 +55,8 @@ body {
 .rightNavTabs a {
     margin-left: auto;
     order: 2;
-    padding: 1em 0.8em;
+    padding: 12px 12px;
+   
 }
 
 .topnav a {
@@ -69,10 +68,6 @@ body {
 .topnav a:hover, .programBtn:hover, .newsBtn:hover{
     color: rgb(242, 168, 8);
     border-bottom: 3px solid rgb(242, 168, 8);
-}
-.SELogo a:hover{
-    border-bottom: 3px solid transparent;
-
 }
 
 .topnav a.active {
@@ -91,26 +86,25 @@ body {
 .programBtn {
     color: #58585A;
     background-color: #FEFEFE;
-    padding: 1em 0.8em;
+    padding: 12px 12px;
     text-decoration: none;
     border: none;
     border-bottom: 3px solid transparent;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Mitr', sans-serif;
     margin-top: 0;
 }
 .program-content {
     display: none;
     position: fixed;
-    color: #FEFEFE;
-    background-color: rgb(242, 168, 8);
+    background-color: #FEFEFE;
     min-width: 160px;
     box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-top: 1.5px;
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: 1;
 
 }
@@ -133,25 +127,25 @@ body {
 .newsBtn {
     color: #58585A;
     background-color: #FEFEFE;
-    padding: 1em 0.8em;
+    padding: 12px 12px;
     text-decoration: none;
     border: none;
     border-bottom: 3px solid transparent;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Mitr', sans-serif;
     margin-top: 0;
 }
 .news-content{
     display: none;
     position: fixed;
-    background-color: rgb(242, 168, 8);
+    background-color: #FEFEFE;
     min-width: 160px;
     box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-top: 1.5px;
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: 1;
 }
 .news:hover .news-content {
@@ -165,23 +159,18 @@ body {
     display: block;
 }
 .program-content a:hover, .news-content a:hover {
-    color: #FEFEFE;
+    color: rgb(242, 168, 8);
     border-bottom: 3px solid transparent;
 }
-
 
 @media screen and (max-width: 600px) {
 .topnav{
     position: relative;
 }
 .SELogo img {
-    width: 12em;
-    height: 2.2em;
+    width: 120px;
+    height: 32px;
 }
-.SELogo a:hover{
-    border-bottom: 3px solid transparent;
-}
-
 .topnav a {
     padding: 10px;
 }
@@ -257,10 +246,7 @@ body {
 .topnav a:hover{
     color: #FEFEFE;
 }
-.program-content, .news-content {
-    background: #FEFEFE;
-    color: rgb(242, 168, 8);
-}
+
 .program-content a:hover, .news-content a:hover{
     color: rgb(242, 168, 8);
     border-bottom: none;
@@ -296,7 +282,6 @@ body {
     border: 1px solid #58585A;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    padding: 5px;
     box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
     opacity: 0.8;
 }
@@ -305,7 +290,7 @@ body {
     outline: none;
 }
 .search-form input::placeholder{
-    font-size: 14px;
+    font-size: 10px;
     opacity: 0.8;
 }
 .rightNavTabs .innerRightNavTabs .search-form{
@@ -315,26 +300,6 @@ body {
     color: rgb(242, 168, 8);
     border-bottom: 3px solid transparent;
 }
-.search-list{
-    
-    position: fixed;
-    background-color: rgb(242, 168, 8);
-    min-width: 160px;
-    box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-top: 1.5px;
-    opacity: 0.9;
-    z-index: 1;
-}
-.search-list a{
-    display: block;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-
 
 /* Footer styles */
 .footer {
@@ -342,13 +307,13 @@ body {
     background-repeat:repeat-x;
     background-position: center;
     color: #FEFEFE;
-    height: 20em;
+    height: 256px;
     border-top: 5px solid #c64a1b;
 
 }
 .footer-container {
     display: flex;
-    height: 15.6em;
+    height: 190px;
 
 }
 .footer-ultimate{
@@ -361,7 +326,7 @@ body {
     
 }
 .leftSide-container{
-    margin-top: 18px;
+    margin-top: 15px;
     margin-left: 60%;
     text-align: center;
     padding: 3%;
@@ -375,14 +340,14 @@ body {
     background-color: #c64a1b;
     padding: 5px 26px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px;
     border-radius: 5px;
     border: none;
     font-family: 'Mitr', sans-serif;
     box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
 }
 .footer img {
-    max-width: 20em;
+    max-width: 150px;
     height: 50px;
 }
 
@@ -394,7 +359,7 @@ body {
 }
 
 .footer .social-icons a {
-    font-size: 20px;
+    font-size: 16px;
     margin: 10px;
     color: #FEFEFE;
     opacity: 0.9;
@@ -403,7 +368,7 @@ body {
 
 .rightSide {
     flex: 6;
-    font-size: 16px;
+    font-size: 12px;
     padding-left: 10px;
     padding-bottom: 5px;
     border-left: 2px solid #fefefe9e;
@@ -415,8 +380,7 @@ body {
 
 }
 .footer h4 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
     opacity: 0.9;
 }
@@ -426,8 +390,8 @@ body {
     color: #FEFEFE;
     display: block;
     margin: 5px 0;
-    font-size: 14px;
-    opacity: 0.8;
+    font-size: 11px;
+    opacity: 0.9;
 }
 .footer-infomation-content{
     padding-left: 15px;
@@ -438,8 +402,8 @@ body {
 .copyright{
     margin-top: 20px;
     text-align: center;
-    font-size: 12px;
-    opacity: 0.5;
+    font-size: 10px;
+    opacity: 0.8;
 }
 
 /* Footer Responsive styles */
@@ -479,12 +443,10 @@ body {
     .rightSide-container{
         display: flex;
         padding-bottom: 0;
-        padding-left: 0;
     
     }
     .categories1{
         flex: 6;
-        padding-left: 15%;
 
     }
     .categories2{
@@ -504,7 +466,18 @@ body {
         text-align: center;
         font-size: 8px;
         opacity: 0.8;
-        margin-top: -12px;
+        margin-top: -30px;
     }
 }
+
+/* Body CSS */
+#show_bodyBg {
+    background:#FEFEFE;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    color: #58585A;
+    padding: 20px;
+}
+
 

@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!---for icons (menu icon, dropdown arrow)-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!---for font---->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Cabin&family=Gabarito&family=Mitr:wght@400;500&family=Open+Sans:wght@500;600&family=Rubik&display=swap" rel="stylesheet">
-
-<!----our navbar css----->
-<link rel="stylesheet" href="frame.css">
-
-<link rel="stylesheet" href="">
-<title>Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!---for icons (menu icon, dropdown arrow)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../frame.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
 
@@ -26,19 +21,19 @@
             <div class="program">
                 <button class="programBtn hidden">Program<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
                     <div class="program-content">
-                        <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering</a>
-                        <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering 2022</a>
-                        <a href="/GlasgowPage.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Double Degree Glasgow</a>
-                        <a href="/ExchangeStudy.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Exchange Program</a>
-                        <a href="/Internship1.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Interships</a>
+                        <a href="#SE"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering</a>
+                        <a href="#SE2022"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering 2022</a>
+                        <a href="#glasgow"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Double Degree Glasgow</a>
+                        <a href="#studyabroad"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Exchange Program</a>
+                        <a href="#intership"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Interships</a>
                     </div>
             </div>
-                <a href="/Admission.html">Admission</a>
+                <a href="#admission">Admission</a>
                 <div class="news">
                     <button class="newsBtn hidden">News<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
                     <div class="news-content">
-                        <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a>
-                        <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News & Announcements</a>
+                        <a href="#events"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a>
+                        <a href="#news_announce"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News & Announcements</a>
                         <a href="#studentLife"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Student Life</a>
                     </div>
                 </div>
@@ -48,22 +43,11 @@
         <div class="rightNavTabs">
             <div class="innerRightNavTabs">
                 <a href="http://127.0.0.1:5500/login.html" class="nav-link">Log In</a>
-                <a href="/FAQ.html" class="nav-link">FAQ</a>
+                <a href="#FAQ" class="nav-link">FAQ</a>
                 <a href="#search" class="nav-link searching">Search<i class="fa fa-search" style="padding-left:12px;"></i></a>
                 <form style="display: none;" class="search-form ">
-                    <input type="text" name="search" placeholder="Enter Keywords" id="myInput" onkeyup="myFunction2()">
-                    <a href="#search" style="border-bottom: none;" class="srchBtn"><i class="fa fa-search " id="searchBtn"></i></a>
-                    <div class="search-list">
-                        <ul id="myUL" style="list-style-type: none; padding-left: 5px;">
-                            <li><a href="/login.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Forum</a></li>
-                            <li><a href="/Admission.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Admission</a></li>
-                            <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a></li>
-                            <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News</a></li>
-                            <li><a href="/FAQ.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>FAQ</a></li>
-                            <li><a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Program</a></li>
-                        </ul>
-                        
-                    </div>
+                    <input type="text" name="search" placeholder="Enter Keywords">
+                    <a href="#search" style="border-bottom: none;"><i class="fa fa-search " id="searchBtn"></i></a>
                 </form>
             </div>
         </div>
@@ -71,15 +55,22 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
-
-<!------------Body Container---------------->
-<div id="show_bodyBg">
-
-</div>
-<div style="height: 200px;"></div>
-
-
-<!----------Footer Section------------>
+    <div style="padding: 80px 0px 50px 0px;">
+        <div class="body-container">
+            <img src="https://icones.pro/wp-content/uploads/2021/02/icone-utilisateur-orange.png" alt="User Image" class="userImg">
+            <h2>{{ user.username }}</h2>
+            <h3>Email: {{ user.email }}</h3>
+            
+            <h3>Posts</h3>
+            <ul style="text-align: left; width:70%; margin: 0 auto;">
+                {% for post in user.posts %}
+                    <li style="list-style-type: none; padding-bottom:10px;"><i class="fa fa-caret-right" style="padding-right: 6px; color:#F04E25"></i><a href="../forum.html" class>{{ post.content }} - {{ post.time }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>    
+    </div>
+    
+<!--Footer Section-->
 <footer class="footer">
     <div class="footer-ultimate">
         <div class="footer-container">
@@ -126,5 +117,6 @@
 </footer>
 
 <script src="frame.js"></script>
+    
 </body>
 </html>

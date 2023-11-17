@@ -1,0 +1,15 @@
+.userImg{
+    width: 100px;
+    height: 100px;
+}
+.body-container{
+    padding: 30px;
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid #1B1B2F;
+    box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    
+}

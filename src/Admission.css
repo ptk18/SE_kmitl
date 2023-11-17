@@ -1,0 +1,446 @@
+.fontstyle{
+  font-family: 'Mitr', sans-serif;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://static.trueplookpanya.com/tppy/member/m_525000_527500/525016/cms/images/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%20I%20love%20KMITL%20(3).JPG");
+
+  /* Set a specific height */
+  min-height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxOverlay {
+  width: 100%;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("https://static.trueplookpanya.com/tppy/member/m_525000_527500/525016/cms/images/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%20I%20love%20KMITL%20(3).JPG");
+
+  /* Set a specific height */
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxOverlay1 {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("https://static.trueplookpanya.com/tppy/member/m_525000_527500/525016/cms/images/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%20I%20love%20KMITL%20(3).JPG");
+
+  /* Set a specific height */
+  min-height: 1100px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxOverlay2 {
+  width: 100%;
+  height: 1100px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("https://static.trueplookpanya.com/tppy/member/m_525000_527500/525016/cms/images/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%20I%20love%20KMITL%20(3).JPG");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxOverlay3 {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.img_SE img {
+  width: 400px;
+  top: -570px;
+  left: 6%;
+  position: relative;
+  box-shadow: 2px 3px 10px #c5c0c0;
+  border-radius: 50%;
+}
+
+.paraSE {
+  color: rgb(115, 102, 75);
+  top: -790px;
+  left: 40%;
+  position: relative;
+  width: 50%;
+  font-size: 17px;
+}
+
+blockquote {
+  border: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: -15px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  content: "\201C"; /* Use the large open-quote character */
+  font-weight: bold;
+  font-size: 48px; /* Adjust the font size as needed */
+  color: rgb(242, 168, 8);
+}
+
+blockquote:after {
+  content: "\201D"; /* Use the large close-quote character */
+  font-weight: bold;
+  font-size: 48px; /* Adjust the font size as needed */
+  color: rgb(242, 168, 8);
+}
+
+.requirement {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 17px;
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(242, 168, 8);
+}
+
+.timetable {
+  color: white;
+  font-size: 16px;
+  line-height: 2;
+  padding-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.timetable h3 {
+  text-align: center;
+}
+
+.timetable_img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.timetable_img h3 {
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 1.5rem;
+}
+
+.question_container {
+  height: 100%;
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.faq {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(23, 22, 22);
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.font_question {
+  color: rgb(52, 48, 48);
+  font-size: 19px;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease-in-out;
+}
+.answer p {
+  color: black;
+  font-size: 17px;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+.faq.active i {
+  transform: rotate(180deg);
+}
+
+i {
+  transition: transform 0.5s ease-in;
+}
+
+.admissionFee {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.admissionFee h3 {
+  color: white;
+  font-size: 19px;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .img_SE img {
+    width: 250px;
+    top: -280px;
+  }
+  .paraSE {
+    top: -490px;
+  }
+  .paraSE h3 {
+    font-size: 12px;
+  }
+
+  .parallaxOverlay {
+    height: 450px;
+  }
+
+  .parallax {
+    min-height: 450px;
+  }
+
+  .parallaxOverlay2 {
+    height: 1100px;
+  }
+
+  .parallax2 {
+    min-height: 1100px;
+  }
+
+  .timetable_img {
+    display: none;
+  }
+ .question h2{
+    font-size: 12px;
+  }
+
+  .answer p{
+    font-size: 12px;
+  }
+
+  .fa-2x {
+    font-size: 1em;
+}
+
+.admissionFee {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+}
+.divide{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.admissionFee h3{
+  font-size: 11px;
+}
+
+
+
+  
+}
+
+@media screen and (max-width: 600px) {
+  .timetable_img {
+    display: block;
+  }
+
+  .timetable {
+    display: none;
+  }
+
+  .requirement {
+    font-size: 11px;
+  }
+
+  .parallaxOverlay2 {
+    height: 550px;
+  }
+
+  .parallax2 {
+    min-height: 550px;
+  }
+
+  .timetable_img h3 {
+    padding-top: 25px;
+    font-size: 1rem;
+  }
+
+  .paraSE {
+    color: rgb(115, 102, 75);
+    left: 40%;
+    position: relative;
+    width: 100%;
+    font-size: 11px;
+    z-index: 990;
+    color: white;
+    transform: translate(-40%, 210%);
+  }
+
+  .cover_img img {
+    display: none;
+  }
+
+  .img_SE img {
+    transform: translate(15%, 120%);
+  }
+
+  .question_container {
+    height: 100%;
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+p{
+  text-align: justify;
+}
+   
+}
+
+/* ipad */
+
+@media screen and (min-width: 700px) and (max-width: 1080px) {
+
+  .timetable_img {
+    display: none;
+  }
+.parallaxOverlay {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.parallax{
+  min-height: 500px;
+}
+.img_SE img {
+    width: 250px;
+    top: -300px;
+    left: 6%;
+    position: relative;
+    box-shadow: 2px 3px 10px #c5c0c0;
+    border-radius: 50%;
+}
+  .paraSE {
+    color: rgb(115, 102, 75);
+    top: -460px;
+    left: 40%;
+    position: relative;
+    width: 50%;
+    font-size: 12px;
+}
+.question h2 {
+    font-size: 15px;
+  }
+
+  .answer p {
+    font-size: 15px;
+  }
+
+  .fa-2x {
+    font-size: 1.5em;
+  }
+   .question_container {
+    height: 100%;
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .admissionFee {
+    width: 80%;
+  }
+  .admissionFee h3 {
+    font-size: 15px;
+  }
+  p{
+  text-align: justify;
+}
+}
+
+
+
+@media screen and (min-width: 1080px)  {
+
+  .timetable_img{
+    display: none;
+  }
+  p{
+  text-align: justify;
+}
+}
+

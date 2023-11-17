@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!---for icons (menu icon, dropdown arrow)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!---for font---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Cabin&family=Gabarito&family=Mitr:wght@400;500&family=Open+Sans:wght@500;600&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/31ced76bc2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!----our all css----->
+    <link rel="stylesheet" href="src/nav.css" />
+    <link rel="stylesheet" href="src/Admission.css" />
+    <link rel="stylesheet" href="/frame.css">
+
+    <link rel="stylesheet" href="" />
+    <title>Admission Page</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="SELogo">
+          <a href="/index.html" ><img src="/images/se (1).png" alt="SE logo"></a>
+      </div>
+      <div class="middleNavTabs">
+          <div class="program">
+              <button class="programBtn hidden">Program<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
+                  <div class="program-content">
+                      <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering</a>
+                      <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering 2022</a>
+                      <a href="/GlasgowPage.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Double Degree Glasgow</a>
+                      <a href="/ExchangeStudy.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Exchange Program</a>
+                      <a href="/Internship1.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Interships</a>
+                  </div>
+          </div>
+              <a href="/Admission.html">Admission</a>
+              <div class="news">
+                  <button class="newsBtn hidden">News<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
+                  <div class="news-content">
+                      <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a>
+                      <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News & Announcements</a>
+                      <a href="#studentLife"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Student Life</a>
+                  </div>
+              </div>
+              <a href="/login.html">Forum</a>
+  
+      </div>
+      <div class="rightNavTabs">
+          <div class="innerRightNavTabs">
+              <a href="http://127.0.0.1:5500/login.html" class="nav-link">Log In</a>
+              <a href="/FAQ.html" class="nav-link">FAQ</a>
+              <a href="#search" class="nav-link searching">Search<i class="fa fa-search" style="padding-left:12px;"></i></a>
+              <form style="display: none;" class="search-form ">
+                  <input type="text" name="search" placeholder="Enter Keywords" id="myInput" onkeyup="myFunction2()">
+                  <a href="#search" style="border-bottom: none;" class="srchBtn"><i class="fa fa-search " id="searchBtn"></i></a>
+                  <div class="search-list">
+                      <ul id="myUL" style="list-style-type: none; padding-left: 5px;">
+                          <li><a href="/login.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Forum</a></li>
+                          <li><a href="/Admission.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Admission</a></li>
+                          <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a></li>
+                          <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News</a></li>
+                          <li><a href="/FAQ.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>FAQ</a></li>
+                          <li><a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Program</a></li>
+                      </ul>
+                      
+                  </div>
+              </form>
+          </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+    <!------------Body Container---------------->
+    <div class="fontstyle">
+    <div class="parallax">
+      <div class="parallaxOverlay">
+        <div class="cover_img">
+          <img src="images/SE wallpaper (7).png" width="100%" />
+        </div>
+
+        <div class="img_SE">
+          <img
+            src="https://curriculum.kmitl.ac.th/wp-content/uploads/2021/07/%E0%B8%8B%E0%B8%AD%E0%B8%9F%E0%B9%81%E0%B8%A7%E0%B8%A3%E0%B9%8C.png"
+          />
+        </div>
+        <div class="paraSE">
+          <blockquote>
+            <h3>
+              Announcement Direct Admissions 1-1 (Early Round) <br />Bachelor of
+              Engineering (International Programs) <br />Academic Year 2024
+              <br />School of Engineering, King Mongkut’s Institute of
+              Technology Ladkrabang (KMITL)
+            </h3>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="height: 100%; background-color: white; margin-top: 50px"
+      class="requirement"
+    >
+      <p>
+        &nbsp; &nbsp; &nbsp; School of Engineering, King Mongkut's Institute of
+        Technology Ladkrabang invites qualified applicants to apply for
+        admissions to the School of Engineering in 4 years Bachelor's Degree
+        Programs, 5 years Unified Bachelor's & Master's Degree Program (KMITL -
+        AIT) and 5 years Unified Bachelor's & Master's Degree Program (KMITL -
+        CMKL) for Academic Year 2024 (beginning in August 2024), and 4 years and
+        5 years Unified Bachelor's & Master's Degree Program (KMITL - NIDA).
+        This round of admissions is opened to all applicants with excellent
+        academic backgrounds. Selection of qualified candidates is based on the
+        applicant's academic records, standardized test scores, and English
+        proficiency test results, along with a personal statement, letters of
+        recommendation, past academic activities, the interview and other
+        supplementary documents.
+      </p>
+
+      <h3>1. Programs and Number of Acceptances</h3>
+      <div>
+        <div class="question_container">
+          <div class="faq">
+            <div class="question">
+              <h2 class="font_question">4 years Bachelor's Degree Programs</h2>
+              <i class="fa-solid fa-2x fa-caret-down"></i>
+            </div>
+            <div class="answer">
+              <p>Software Engineering - 50</p>
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h2 class="font_question">
+                5 years Unified Bachelor's & Master's Degree Program (KMITL-
+                CMKL)
+              </h2>
+              <i class="fa-solid fa-2x fa-caret-down"></i>
+            </div>
+            <div class="answer">
+              <p>Software Engineering - 12</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <h3>2. Application Requirements</h3>
+      <h4>2.1 Bachelor's Requirements (Based on KMITL)</h4>
+      <h4>2.1.1 Educational background</h4>
+      <p>
+        The applicant must satisfy at least one of the following requirements:
+      </p>
+      <ol>
+        <li>Graduated or studying in Matthayom 6.</li>
+        <li>
+          Graduated in qualification equivalent to Matthayom 6 as approved by
+          the Ministry of Education. (The applicants who submit this educational
+          background, please contact SIIE office.)
+        </li>
+        <li>
+          Graduated or studying at an accredited college or higher-education
+          institution in Thailand or aboard.
+        </li>
+      </ol>
+      <p>
+        The applicant must provide an official final transcript and their
+        official high school diplomas and/or certificates of completion from
+        their school before the start of Academic Year 2024.
+      </p>
+      <h4>2.1.2 Academics Record</h4>
+      <p>
+        The applicant should submit at least one of the following standardized
+        test results and obtain a score which meet the minimum requirements as
+        specified below:
+      </p>
+      <table></table>
+      <ul>
+        <li>SAT or GSAT Math score of 600 or higher</li>
+        <li>
+          or SAT subject test Math Level 1 or Math Level 2 score of 600 or
+          higher
+        </li>
+        <li>or ACT Math score of 23 or higher</li>
+        <li>
+          or IB Diploma score for a subject in Mathematics with a score of 5 or
+          higher
+        </li>
+        <li>
+          or AP test for a subject in Mathematics with a score of 4 or higher
+        </li>
+        <li>
+          or A-Level or AS-Level for a subject in Mathematics with grade B or
+          above
+        </li>
+        <li>or A-Level Mathematics 1 (TCAS) with a score of 30 or higher</li>
+        <li>
+          or Cumulative GPA of all Math subjects in high school at least 3 out
+          of 4 (or equivalent)
+        </li>
+      </ul>
+      <i
+        >For Software Engineering Certificate provided by School of Engineering
+        – KMITL *can not* be used as a substitution of any standardized test
+        results, however it can be submitted for consideration as additional
+        document.</i
+      >
+      <h4>2.1.3 Language Requirement (for non-native English speakers)</h4>
+      <p>
+        The applicant should submit at least one of the following English
+        proficiency Test score and obtain a score which meets the minimum
+        requirement specified below:
+      </p>
+      <table align="center" border="1" cellpadding="1" cellspacing="1">
+        <tbody>
+          <tr>
+            <td>
+              <p style="text-align: center">
+                <strong>English Proficiency Test</strong>
+              </p>
+            </td>
+            <td style="text-align: center"><strong>Minimum Score</strong></td>
+          </tr>
+          <tr>
+            <td>
+              <p style="text-align: center">TOEFL – paper-based</p>
+            </td>
+            <td style="text-align: center">550</td>
+          </tr>
+          <tr>
+            <td>
+              <p style="text-align: center">TOEFL – CBT</p>
+            </td>
+            <td style="text-align: center">213</td>
+          </tr>
+          <tr>
+            <td>
+              <p style="text-align: center">TOEFL – IBT</p>
+            </td>
+            <td style="text-align: center">79</td>
+          </tr>
+          <tr>
+            <td>
+              <p style="text-align: center">IELTS</p>
+            </td>
+            <td style="text-align: center">6</td>
+          </tr>
+          <tr>
+            <td>
+              <p style="text-align: center">
+                Cambridge English Exams FCE or CAE or CPE
+              </p>
+            </td>
+            <td style="text-align: center">170</td>
+          </tr>
+          <tr>
+            <td>
+              <p style="text-align: center">IB – English A1 or A2</p>
+            </td>
+            <td style="text-align: center">4</td>
+          </tr>
+          <tr>
+            <td>
+              <p style="text-align: center">IB – English B (HL)</p>
+            </td>
+            <td style="text-align: center">5</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">KMITL-TEP</td>
+            <td style="text-align: center">B2</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <b>Remark:</b><br />
+        <li>
+          Applicants who have an English proficiency score meeting with minimum
+          or over requirement can be admitted without conditions (The score has
+          to be valid not more than 2 years from the date of application
+          deadline).
+        </li>
+        <li>
+          Applicants who do not submit any English proficiency test score or
+          have lower than the required can be conditionally accepted by
+          enrolling in additional English as a Second Language (ESL) courses at
+          KMITL in the first semester.
+        </li>
+      </p>
+
+      <h4>2.1.4 Personal Statement</h4>
+      <p>
+        Please write an essay (500 words or fewer) that demonstrates your
+        ability to communicate your thoughts and your related experience in the
+        field of study.
+      </p>
+      <h4>2.1.5 Two Recommendation Letters</h4>
+      <p>
+        The applicant should upload PDFs or JPG snapshots of the letters of
+        recommendation from your advisors or teachers.
+      </p>
+
+      <h4>2.2.2 Master's Requirements (Based on CMKL)</h4>
+      <p>
+        Decision of admission will be made by the end of 5th semester.<br />
+        At the end of the 5th Semester, the student is required to provide all
+        the necessary documents, satisfy the English language requirements, and
+        follow the admission procedure set out by
+        <a href="https://eic.cmkl.ac.th/admission">CMKL</a>
+        .CMKL will evaluate the application and determine whether the student is
+        provisionally admitted to the Master's program the student has applied
+        for.
+      </p>
+    </div>
+
+    <!--Table and Procedure-->
+
+    <div class="parallax2">
+      <div class="parallaxOverlay2">
+        <div class="timetable_img">
+          <h3>3. Procedure and Timetable</h3>
+          <img src="images/Activities (1).png" width="100%" />
+        </div>
+
+        <div class="timetable">
+          <h3>3. Admissions Schedule</h3>
+          <table align="center" border="1" cellpadding="1" cellspacing="1">
+            <tbody>
+              <tr>
+                <td><strong>Details</strong></td>
+                <td><strong>Dates</strong></td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    1. Application filing and Application Fee Payment Period
+                    <a href="http://new.reg.kmitl.ac.th/admission/"
+                      >http://new.reg.kmitl.ac.th/admission/</a
+                    >
+                  </p>
+                </td>
+                <td>Now – October 27, 2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>2. Interview Candidate Notification</p>
+
+                  <p>
+                    <a href="http://new.reg.kmitl.ac.th/admission/"
+                      >http://new.reg.kmitl.ac.th/admission/</a
+                    >
+                  </p>
+                </td>
+                <td>November 3, 2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>3. Candidate Interview Date</p>
+                </td>
+                <td>November 12, 2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>4. Interview Result Announcement</p>
+
+                  <p>
+                    <a href="http://new.reg.kmitl.ac.th/admission/"
+                      >http://new.reg.kmitl.ac.th/admission/</a
+                    >
+                  </p>
+                </td>
+                <td>
+                  <p>November 24, 2023</p>
+
+                  <p>&nbsp;</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>5. TCAS Clearing House (for Thai Nationality only)</p>
+                </td>
+                <td>February 6-7, 2024</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    6.KMITL has announced the list of qualified candidates to
+                    study at KMITL
+                  </p>
+
+                  <p>
+                    with the details of how to make advanced payment of tuition
+                    fees.
+                  </p>
+                </td>
+                <td>February 14, 2024</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>7. Enrollment Confirmation and Tuition Fee Payment</p>
+
+                  <p>
+                    <a href="http://new.reg.kmitl.ac.th/admission/"
+                      >http://new.reg.kmitl.ac.th/admission/</a
+                    >
+                  </p>
+                </td>
+                <td>February 19-26, 2024</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--Application Submission-->
+    <div style="height: 100%; background-color: white" class="requirement">
+      <h3>4. Application Submission</h3>
+      <p>
+        <b>Step 1:</b> Applicants must apply via online application system
+        https://new.reg.kmitl.ac.th/admission/ ( User guidance for application
+        system
+        https://drive.google.com/file/d/
+        1DHWVayEjQtMde8hHcDTYHe3XzEyNZTta/view?usp=sharing
+        )
+      </p>
+      <p>
+        <b>Step 2:</b> Step 2: Applicants must print out the pay in slip to
+        deposit a 1000 baht non-refundable application fee through any Kasikorn
+        Bank (KBank) counter (with 10 Baht fee) or scanning barcode via any
+        Mobile Banking application (no fees charged). <br />
+        &nbsp; &nbsp; &nbsp;The applicant is responsible for any additional
+        transaction fee incurred by financial institutions. **Please note that
+        the application payment is non- refundable**. The applicant will be
+        notified of his/her eligibility for an interview after the admissions
+        committee reviews that application. The actual time of the interview
+        will be announced later.
+      </p>
+      <p>
+        <b>Step 3:</b> Step 3: Applicants must upload all necessary documents as
+        the following in one pdf file(up to 4 MB in size only) to online
+        application system with subject filename as Name of program No.1
+        youselected_Application ID_Full Name (e.g. Biomedical
+        Engineering_12345_Tittita Keawchu).
+      </p>
+
+      <ol>
+        <li>Your application form</li>
+        <li>
+          A photocopy of the applicant's national identification card or
+          passport
+        </li>
+        <li>Academic Records - High School Transcript, SAT, ACT, IB etc.</li>
+        <li>English Proficiency Test score - IELTS, TOEFL etc.</li>
+        <li>Two recommendation letters from teachers or supervisors.</li>
+        <li>Personal Statement</li>
+        <li>Portfolios Achievements (optional)</li>
+        <li>
+          Placement test results (optional): submit available AP, IB Higher
+          Level, A-Level, or any grade 12 equivalent placement test results. The
+          policy and criteria for placement credits will be determined prior to
+          the applicant's enrollment.
+        </li>
+        <li>
+          Certificate in any academic activities provided by School of
+          Engineering – KMITL (optional)
+        </li>
+      </ol>
+    </div>
+
+    <!--Admission Fee-->
+    <div class="parallax3">
+      <div class="parallaxOverlay3">
+        <div class="admissionFee">
+          <div class="divide">
+            <i
+              class="fa-solid fa-building-columns fa-2xl"
+              style="color: #ffffff"
+            ></i>
+            <h3>Tuition Fees For Bachelor</h3>
+            <h3>90,000</h3>
+            <h3>Baht/Semester</h3>
+          </div> <hr>
+          <div class="divide">
+            <i
+              class="fa-solid fa-building-columns fa-2xl"
+              style="color: #ffffff"
+            ></i>
+            <h3>Tuition Fees For Master( CMKL )</h3>
+            <h3>90,000 ( in 4 years ) | 185,000 (in year 5 )</h3>
+            <h3>Baht/Semester</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--contact-->
+
+    <div
+      style="height: 100%; background-color: white; padding-bottom: 20px"
+      class="requirement"
+    >
+      <h3>7. Contact Information7. Contact Information</h3>
+      <p>
+        For additional information of Admissions , please contact SIIE office,
+        Faculty of Engineering, KMITL
+      </p>
+      <ul>
+        <li>Phone: +66(0)994961526</li>
+        <li>Line: @siie_kmitl</li>
+        <li>Email: siie-admission@kmitl.ac.th</li>
+        <li>Facebook: https://www.facebook.com/KMITL.SIIE</li>
+      </ul>
+      <p>
+        For more details in each program , directly contact our Program
+        Directors:<br />
+        <b>Software Engineering</b>
+      </p>
+      <li>
+        Contact person: Asst.Prof.Dr.Visit Hirankitti o Mobile Phone +(0)80454
+        9990
+      </li>
+      <li>Email: visit.hi@kmitl.acth</li>
+      <li>Website:http://www.se.kmitl.ac.th</li>
+      <li>
+        Facebook: https://www.facebook.com/sekmitl Announced on September 28,
+        2023
+      </li>
+    </div>
+    </div>
+
+    <!----------Footer Section------------>
+    <footer class="footer">
+      <div class="footer-ultimate">
+        <div class="footer-container">
+          <div class="leftSide">
+            <div class="leftSide-container">
+              <div class="SchoolLogo">
+                <img src="images/seWithBg.png" alt="Logo" />
+              </div>
+              <button class="forumBtn">FORUM</button>
+              <div class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-envelope"></a>
+              </div>
+            </div>
+          </div>
+          <div class="rightSide">
+            <div class="rightSide-container">
+              <div class="categories1">
+                <h4>Information</h4>
+                <div class="footer-infomation-content">
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Program</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Admission</a
+                  >
+                  <a href="ContactPage.html"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+              <div class="categories2">
+                <h4>Quick Links</h4>
+                <div class="footer-quickLinks-content">
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >KMITL</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >SIIE</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >KMITL Library</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          &copy; 2023 Software Engineering, King Mongkut's Institute of
+          Technology Ladkrabang
+        </p>
+      </div>
+    </footer>
+
+    <script src="src/nav.js"></script>
+    <script src="src/faq.js"></script>
+  </body>
+</html>

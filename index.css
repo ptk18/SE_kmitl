@@ -16,17 +16,17 @@
     display: flex;
 }
 .about-program {
-    flex: 6;
-    padding: 80px 20px 20px 60px;
+    flex: 7;
+    padding: 80px 20px 50px 80px;
 }
 .about-program h2 {
     font-family: 'Merriweather', serif;
-    font-size: 22px;
-    color: #c9340f;
+    font-size: 26px;
+    color: #F04E25;
 }
 .program-video{
-    flex:6;
-    padding: 50px 60px 20px 20px;
+    flex:5;
+    padding: 60px 30px 20px 0px;
     text-align: center;
 }
 .video {
@@ -36,10 +36,10 @@
     height: 225px;
 }
 .overview-second-row{
-    padding-top: 20px;
+    padding-top: 40px;
     display: flex;
     background-color: lightgoldenrodyellow;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 .logos{
     flex: 10;
@@ -73,6 +73,7 @@
 .apply-button{
     flex: 2;
     padding: 20px 60px 20px 20px;
+    text-decoration: none;
 
 
 }
@@ -142,6 +143,7 @@
 /* News CSS session */
 .news-session{
     display: flex;
+    border-bottom: 1px solid #58585a21;
 }
 .featuring-news{
     flex:9;
@@ -159,7 +161,7 @@
 }
 .all-news-header{
     border-left: 2px solid #58585a39;
-    padding: 8px 0px 0px 7px;
+    padding-left: 8px;
 }
 .all-news{
 
@@ -174,11 +176,11 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     margin: 10px;
-    height: 190px;
+    height: 240px;
 }
 .news-cards .card img {
     width: 150px;
-    height: 120px;
+    height: 170px;
 }
   
 .card:hover {
@@ -187,7 +189,7 @@
   
 .card-container {
     padding: 2px 16px;
-    height: 70px;
+    height: 80px;
 }
 .card-container .news-title b{
     font-size: 11px;
@@ -202,7 +204,7 @@
 }
 .featuring-events{
     flex:3;
-    border-left: 2px solid #c9340f;
+    border-left: 1px solid #58585a21;
 }
 .events-section-header{
     display: flex;    
@@ -215,7 +217,7 @@
 }
 .all-events-header{
     border-left: 2px solid #58585a39;
-    padding: 8px 0px 0px 7px;
+    padding-left: 8px;
 }
 .all-events{
 
@@ -223,28 +225,158 @@
 }
 .event{
     display: flex;
+    padding-left: 10px;
+    margin-bottom: 8px;
 }
 .event-date-icon{
     flex: 2;
     padding: 3px;
-    background-color: lightcoral;
 }
 .event-date-icon-container{
-    
-    background: limegreen;
     text-align: center;
+    background-color: #F04E25; 
+    color: white;
+    height: 45px;
+    width: 45px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.064);
     
 }
 .event-date-icon-mth{
     font-size: 12px;
     font-weight: bold;
-    background-color: red;
+    padding-top: 5px;
 }
 .event-date-icon-day{
     font-size: 10px;
-    background-color: yellow;
 }
 .about-event {
     flex: 10;
-    background-color: lightblue;
+
+}
+.event-date-of-about-event{
+    margin: 0; 
+    font-size: 12px;
+}
+
+/* responsive news session */
+@media screen and (max-width: 600px) {
+    .news-session{
+        display: block;
+        border-bottom: 1px solid #58585a21;
+    }
+    .news-cards {
+        display: block;
+        margin: 0px 15px;
+    }
+}
+
+/*SE now section*/
+.SE-now{
+    border-bottom: 1px solid #58585a21;
+}
+.SE-now-header-h1{
+    color: #F04E25;
+}
+.SE-now-header{
+    text-align: center;
+}
+.image-gallery{
+    display: flex;
+    padding: 10px;
+}
+.image1{
+    width: 20%;
+}
+.image2{
+    width: 20%;
+}
+.image3{
+    width: 20%;
+}
+.image4{
+    width: 20%;
+}
+.image5{
+    width: 20%;
+}
+
+
+/* responsive SE NOW session */
+@media screen and (max-width: 600px) {
+    .image-gallery{
+        display: block;
+    }
+    .image1, .image2, .image3, .image4, .image5{
+        width: 100%;
+    }
+}
+
+/*Career Opportunity Section*/
+.career-oppo{
+    border-bottom: 1px solid #58585a21;
+    background-color: #E5DBFF;
+}
+.career-oppo-header{
+    text-align: center;
+}
+.career-oppo-header-h1{
+    padding-top: 20px;
+    color: #F04E25;
+    
+}
+.careers-in-SE{
+    width: 100%;
+}
+.careers-in-SE-container{
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+
+}
+.careers-in-SE-catagory1{
+    width: 35%;
+    list-style-type: none;
+    text-align: left;
+}
+.careers-in-SE-catagory2{
+    width: 65%;
+    list-style-type: none;
+    text-align: left;
+}
+.dashboard{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+.dashboard-students{
+    width: 33%;
+    display: block;
+    text-align: center;
+}
+.dashboard-graduates{
+    width: 33%;
+    display: block;
+    text-align: center; 
+}
+.dashboard-students-glasglow {
+    width: 33%;
+    display: block;
+    text-align: center;
+}
+
+/* responsive SE NOW session */
+@media screen and (max-width: 600px) {
+    .careers-in-SE-container{
+        display: flex;
+        width: 100%;
+        font-size: 12px;
+    }
+    .careers-in-SE-catagory1{
+        width: 40%;
+    }
+    .careers-in-SE-catagory2{
+        width: 60%;
+    }
 }

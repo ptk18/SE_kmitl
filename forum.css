@@ -1,0 +1,143 @@
+.container{
+    padding: 5% 4% 0% 4%;
+    background-color: #FEFEFE;
+}
+.post-creation-style{
+  display: flex;
+}
+.post-textarea-style{
+    width: 80%;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 5px;
+    opacity: 0.9;
+}
+.postButton{
+    border: none;
+    background-color: orangered;
+    color: white;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 16px;
+    width: 7em;
+    height: 2em;
+    font-weight: bold;
+    box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
+    margin-left: 20px;
+  }
+  .create-new-post{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-image: url('https://t3.ftcdn.net/jpg/01/59/69/90/360_F_159699057_hi2ghpKsByh0uDHwtyb0pVikhX3ni0XF.jpg');
+    background-repeat:repeat-x;
+    background-position: center;
+    width: 100%;
+    height: 22px;
+    padding: 1% 5% 3% 5%;
+    border-top: 5px solid #c64a1b;
+  }
+  .post-card{
+    border: 2px solid #1B1B2F;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .post-card-header{
+    display: flex;
+  }
+  .post-card-user-header{
+    display: flex;
+    flex: 12;
+   
+  }
+  .posted-time{
+    flex: 2;
+    text-align: end;
+    padding-right: 5px;
+    font-size: 14px;
+    color: #58585A;
+  }
+  .user-icon-in-post-card{
+    
+  }
+  .username-in-post-card{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .user-icon img{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    
+  }
+  .post-content{
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+  .comment-icon{
+    color: #FC9833;
+    padding: 3px;
+    width: 25px;
+    
+  }
+  .comment-container{
+    padding: 10px;
+  }
+  .comment-card{
+    background-color: orange;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 8px -6px rgb(46, 46, 46);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+  }
+  .comment-card-header{
+    display: flex;
+  }
+  .comment-card-user-header{
+    display: flex;
+    flex: 12;
+  }
+  .username-in-comment-card{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+  .posted-time-of-comment{
+    flex: 2;
+    text-align: end;
+    padding-right: 5px;
+    font-size: 14px;
+    color: black;
+  }
+  .comment-content{
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    opacity: 0.8;
+  }
+  .trash-bin{
+    color: #FC9833;
+    padding-left: 92%;
+  }
+  .edit {
+    color: #FC9833;
+    padding-left: 2%;
+  }
+  input[type=text]:focus {
+    border: 2px solid #555;
+  }

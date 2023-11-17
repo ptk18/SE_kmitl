@@ -1,0 +1,159 @@
+.fontstyle{
+  font-family: 'Mitr', sans-serif;
+}
+
+
+.img_overlay {
+  width: 100%;
+  height: 40vh;
+  background: linear-gradient(
+      90deg,
+      rgba(92, 91, 88, 0.5),
+      rgba(139, 138, 134, 0.5)
+    ),
+    url("https://t4.ftcdn.net/jpg/02/18/89/83/360_F_218898398_wnLuoR9GY4qhLB2tc7o3tSJbQCRfq0xc.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+}
+
+h1 {
+  color: white;
+  font-size: 45px;
+}
+
+p,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+}
+
+.center{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.question_container {
+  height: 100%;
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.faq{
+    max-width: 900px;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(23, 22, 22);
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.font_question {
+  color: rgb(52, 48, 48);
+  font-size: 19px;
+}
+
+
+.category {
+  color: rgb(234, 113, 14);
+  font-size: 30px;
+  border: 1px solid black;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease-in-out;
+}
+.answer p{
+    color: black;
+    font-size: 17px;
+}
+
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active i{
+    transform: rotate(180deg);
+}
+
+i{
+    transition: transform .5s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+  .center h1{
+    font-size: 35px;
+  }
+
+  .center p{
+    font-size: 15px;
+  }
+
+  .category{
+    font-size: 20px;
+    width: 80%;
+  }
+  .faq h2{
+    font-size: 14px;
+  }
+
+  .answer p{
+    font-size: 13px;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .category{
+    font-size: 25px;
+    width: 70%;
+  }
+
+  .center h1{
+    font-size:50px;
+  }
+
+  .center p{
+    font-size: 30px;
+  }
+}

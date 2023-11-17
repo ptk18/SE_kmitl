@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!---for icons (menu icon, dropdown arrow)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/31ced76bc2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!---for font---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Cabin&family=Gabarito&family=Mitr:wght@400;500&family=Open+Sans:wght@500;600&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----our navbar css----->
+    <link rel="stylesheet" href="src/nav.css" />
+    <link rel="stylesheet" href="src/faq.css" />
+    <link rel="stylesheet" href="/frame.css">
+
+    <link rel="stylesheet" href="" />
+    <title>FAQ Page</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="SELogo">
+          <a href="/index.html" ><img src="/images/se (1).png" alt="SE logo"></a>
+      </div>
+      <div class="middleNavTabs">
+          <div class="program">
+              <button class="programBtn hidden">Program<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
+                  <div class="program-content">
+                      <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering</a>
+                      <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering 2022</a>
+                      <a href="/GlasgowPage.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Double Degree Glasgow</a>
+                      <a href="/ExchangeStudy.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Exchange Program</a>
+                      <a href="/Internship1.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Interships</a>
+                  </div>
+          </div>
+              <a href="/Admission.html">Admission</a>
+              <div class="news">
+                  <button class="newsBtn hidden">News<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
+                  <div class="news-content">
+                      <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a>
+                      <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News & Announcements</a>
+                      <a href="#studentLife"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Student Life</a>
+                  </div>
+              </div>
+              <a href="/login.html">Forum</a>
+  
+      </div>
+      <div class="rightNavTabs">
+          <div class="innerRightNavTabs">
+              <a href="http://127.0.0.1:5500/login.html" class="nav-link">Log In</a>
+              <a href="/FAQ.html" class="nav-link">FAQ</a>
+              <a href="#search" class="nav-link searching">Search<i class="fa fa-search" style="padding-left:12px;"></i></a>
+              <form style="display: none;" class="search-form ">
+                  <input type="text" name="search" placeholder="Enter Keywords" id="myInput" onkeyup="myFunction2()">
+                  <a href="#search" style="border-bottom: none;" class="srchBtn"><i class="fa fa-search " id="searchBtn"></i></a>
+                  <div class="search-list">
+                      <ul id="myUL" style="list-style-type: none; padding-left: 5px;">
+                          <li><a href="/login.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Forum</a></li>
+                          <li><a href="/Admission.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Admission</a></li>
+                          <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a></li>
+                          <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News</a></li>
+                          <li><a href="/FAQ.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>FAQ</a></li>
+                          <li><a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Program</a></li>
+                      </ul>
+                      
+                  </div>
+              </form>
+          </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+    <!------------Body Container---------------->
+    <div class="fontstyle">
+    <div class="img_overlay">
+      <div class="center">
+        <h1>STUDENTS FAQS</h1>
+        <p>FREQUENTLY ASKED QUESTIONS & ANSWERS</p>
+      </div>
+    </div>
+
+    <div class="question_container">
+      <h1 class="category">About Program</h1>
+      <div class="faq">
+        <div class="question">
+          <h2 class="font_question">
+            How to apply SE Program with first round or second round?
+          </h2>
+          <i class="fa-solid fa-2x fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            You need to read through document in the program page and prepare
+            for the required documents.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h2 class="font_question">
+            How to apply SE Program with first round or second round?
+          </h2>
+          <i class="fa-solid fa-2x fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            You need to read through document in the program page and prepare
+            for the required documents.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h2 class="font_question">
+            How to apply SE Program with first round or second round?
+          </h2>
+          <i class="fa-solid fa-2x fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            You need to read through document in the program page and prepare
+            for the required documents.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h2 class="font_question">
+            How to apply SE Program with first round or second round?
+          </h2>
+          <i class="fa-solid fa-2x fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            You need to read through document in the program page and prepare
+            for the required documents.
+          </p>
+        </div>
+      </div>
+
+      <h1 class="category">About Program</h1>
+      <div class="faq">
+        <div class="question">
+          <h2 class="font_question">
+            How to apply SE Program with first round or second round?
+          </h2>
+          <i class="fa-solid fa-2x fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            You need to read through document in the program page and prepare
+            for the required documents.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h2 class="font_question">
+            How to apply SE Program with first round or second round?
+          </h2>
+          <i class="fa-solid fa-2x fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            You need to read through document in the program page and prepare
+            for the required documents.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h2 class="font_question">
+            How to apply SE Program with first round or second round?
+          </h2>
+          <i class="fa-solid fa-2x fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            You need to read through document in the program page and prepare
+            for the required documents.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h2 class="font_question">
+            How to apply SE Program with first round or second round?
+          </h2>
+          <i class="fa-solid fa-2x fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            You need to read through document in the program page and prepare
+            for the required documents.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!----------Footer Section------------>
+    <footer class="footer">
+      <div class="footer-ultimate">
+        <div class="footer-container">
+          <div class="leftSide">
+            <div class="leftSide-container">
+              <div class="SchoolLogo">
+                <img src="images/seWithBg.png" alt="Logo" />
+              </div>
+              <button class="forumBtn">FORUM</button>
+              <div class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-envelope"></a>
+              </div>
+            </div>
+          </div>
+          <div class="rightSide">
+            <div class="rightSide-container">
+              <div class="categories1">
+                <h4>Information</h4>
+                <div class="footer-infomation-content">
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Program</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Admission</a
+                  >
+                  <a href="ContactPage.html"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+              <div class="categories2">
+                <h4>Quick Links</h4>
+                <div class="footer-quickLinks-content">
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >KMITL</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >SIIE</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >KMITL Library</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          &copy; 2023 Software Engineering, King Mongkut's Institute of
+          Technology Ladkrabang
+        </p>
+      </div>
+    </footer>
+
+    <script src="src/nav.js"></script>
+    <script src="src/faq.js"></script>
+  </body>
+</html>

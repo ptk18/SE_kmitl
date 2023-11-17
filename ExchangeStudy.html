@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!---for icons (menu icon, dropdown arrow)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!---for font---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Cabin&family=Gabarito&family=Mitr:wght@400;500&family=Open+Sans:wght@500;600&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/31ced76bc2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!----our all css----->
+    <link rel="stylesheet" href="src/nav.css" />
+    <link rel="stylesheet" href="src/Exchange.css" />
+    <link rel="stylesheet" href="/frame.css">
+
+    <link rel="stylesheet" href="" />
+    <title>Exchange Study</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="SELogo">
+          <a href="/index.html" ><img src="/images/se (1).png" alt="SE logo"></a>
+      </div>
+      <div class="middleNavTabs">
+          <div class="program">
+              <button class="programBtn hidden">Program<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
+                  <div class="program-content">
+                      <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering</a>
+                      <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering 2022</a>
+                      <a href="/GlasgowPage.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Double Degree Glasgow</a>
+                      <a href="/ExchangeStudy.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Exchange Program</a>
+                      <a href="/Internship1.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Interships</a>
+                  </div>
+          </div>
+              <a href="/Admission.html">Admission</a>
+              <div class="news">
+                  <button class="newsBtn hidden">News<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
+                  <div class="news-content">
+                      <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a>
+                      <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News & Announcements</a>
+                      <a href="#studentLife"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Student Life</a>
+                  </div>
+              </div>
+              <a href="/login.html">Forum</a>
+  
+      </div>
+      <div class="rightNavTabs">
+          <div class="innerRightNavTabs">
+              <a href="http://127.0.0.1:5500/login.html" class="nav-link">Log In</a>
+              <a href="/FAQ.html" class="nav-link">FAQ</a>
+              <a href="#search" class="nav-link searching">Search<i class="fa fa-search" style="padding-left:12px;"></i></a>
+              <form style="display: none;" class="search-form ">
+                  <input type="text" name="search" placeholder="Enter Keywords" id="myInput" onkeyup="myFunction2()">
+                  <a href="#search" style="border-bottom: none;" class="srchBtn"><i class="fa fa-search " id="searchBtn"></i></a>
+                  <div class="search-list">
+                      <ul id="myUL" style="list-style-type: none; padding-left: 5px;">
+                          <li><a href="/login.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Forum</a></li>
+                          <li><a href="/Admission.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Admission</a></li>
+                          <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a></li>
+                          <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News</a></li>
+                          <li><a href="/FAQ.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>FAQ</a></li>
+                          <li><a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Program</a></li>
+                      </ul>
+                      
+                  </div>
+              </form>
+          </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+    <!------------Body Container---------------->
+    <div class="fontstyle">
+    <div class="parallax">
+      <div class="parallaxOverlay">
+        <div class="cover_img">
+          <img src="images/SE_Exchange.png" width="100%" />
+        </div>
+
+        <div class="img_SE">
+          <img
+            src="https://curriculum.kmitl.ac.th/wp-content/uploads/2021/07/%E0%B8%8B%E0%B8%AD%E0%B8%9F%E0%B9%81%E0%B8%A7%E0%B8%A3%E0%B9%8C.png "
+          />
+        </div>
+        <div class="paraSE">
+          <blockquote>
+            <h3>
+              Qualified students in the SE program have an opportunity to join
+              an exchange study for one semester in Year 3 Semester 2 at
+              Frankfurt University of Applied Sciences (FRA-UAS), our partner
+              university in Germany. The students joining the exchange program
+              will be taking courses in the Bachelor Program in Computer Science
+              at FRA-UAS and the results and credits of the study be transferred
+              back to their study in the SE program.
+            </h3>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!--for requirement-->
+
+    <div
+      style="height: 100%; background-color: white; margin-top: 20px"
+      class="requirement"
+    >
+      <p>
+        <a href="https://www.frankfurt-university.de/en/"
+          >Frankfurt University of Applied Sciences</a
+        >
+        (abbreviated as FRA-UAS) is a large practice-oriented higher-education
+        institute specializing in science and technology. The University is
+        located near the center of
+        <a href="http://en.wikipedia.org/wiki/Frankfurt">Frankfurt am Main</a>,
+        a city which is considered a multicultural city and the largest
+        financial center in Continental Europe. It has a highly international
+        student body, with over 10,000 students from more than 100 countries.
+        The University has more than 650 academic staff and 220 administrative
+        staff. There are four faculties:
+      </p>
+      <ul>
+        <li>Architecture and construction</li>
+        <li>Informatics and engineering</li>
+        <li>Business and law</li>
+        <li>Social work and health</li>
+      </ul>
+      <p>
+        The degree programs in the University adopts a bi-semester system. Each
+        semester is 19-week long, with 15 weeks of teaching. The semester times
+        are as follows:
+      </p>
+      <ul>
+        <li>Winter Semester : October – February</li>
+        <li>Summer Semester : Mid March – July</li>
+      </ul>
+
+      <p>
+        FRA-UAS has been offering many postgraduate programs in English and,
+        recently, has started to teach a number of undergraduate courses in
+        English, including the courses in the second year in its
+        <a
+          href="https://www.frankfurt-university.de/en/studies/bachelor-programs/computer-science-b-sc"
+          >Bachelor Program in Computer Science.</a
+        >
+      </p>
+
+      <h3>1. Exchange Scheme</h3>
+      <p>
+        By joining this exchange program, you are to take the following four
+        mandatory courses in the Bachelor Program in Computer Science at
+        FRA-UAS. The results of the study will be transferred back as the
+        results of the equivalent courses in the SE program (see the table
+        below).
+      </p>
+      <br />
+
+      <table align="center" border="1" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <th>Courses at FRA-UAS</th>
+            <th>ECTS</th>
+            <th>Courses at KMITL</th>
+            <th>Credit</th>
+          </tr>
+          <tr>
+            <td>Software Engineering - Design</td>
+            <td>5</td>
+            <td>Software Design and Architecture</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Realtime Systems</td>
+            <td>5</td>
+            <td>
+              <p>
+                Advanced Topics in Software Engineering (SE Track)<br />
+                Embedded System Software (Mobile SE Track)
+              </p>
+            </td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>IT Security</td>
+            <td>5</td>
+            <td>Computer Security</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Distributed Systems</td>
+            <td>5</td>
+            <td>Distributed Computing</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Programming Exercises</td>
+            <td>5</td>
+            <td>Team Software Project</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+      <p>
+        Additionally, in each year, there are 1 - 3 courses in the M.Sc. in High
+        Integrity Systems program at FRA-UAS with transferable credits which you
+        may take. The list of the courses is to be announced a few months before
+        the exchange begins.<br />
+        The following courses are the courses in the SE program in Year 3
+        Semester 2 which have no equivalent counterpart at FRA-UAS. You are to
+        take these courses in Year 4 Semester 2 instead:
+      </p>
+      <ul>
+        <li>Science & Technology for the Modern World</li>
+        <li>
+          Software Verification and Validation (unless the M.Sc. course
+          "Advanced Testing Techniques" is taken at FRA-UAS)
+        </li>
+        <li>Software Development Process</li>
+        <li>Compiler Construction (for students in the SE track only)</li>
+      </ul>
+      `
+    </div>
+    <div class="parallax1">
+      <div class="parallaxOverlay1"></div>
+    </div>
+
+    <!--Assessment-->
+    <div style="height: 100%; background-color: white" class="requirement">
+      <h3>2. Cost</h3>
+      <p>
+        In accordance with the university's regulation, you are required to pay
+        the normal tuition fee for Year 3 Semester 1 to KMITL as usual. FRA-UAS
+        does not collect additional tuition fee for your study there. You are
+        still required to prepare for other expenses during your period of study
+        at Frankfurt. The following table provides a rough estimate of the
+        essential expenses (not including leisure activities, souvenirs and
+        other unnecessary items):
+      </p>
+      <table align="center" border="1" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <th>Expense</th>
+            <th>
+              Estimated cost / semester<br />
+              (5 months)
+            </th>
+          </tr>
+          <tr>
+            <td>Round-trip flight ticket</td>
+            <td>47,000 THB</td>
+          </tr>
+          <tr>
+            <td>Semester ticket (covering public transport)</td>
+            <td>330 €</td>
+          </tr>
+          <tr>
+            <td>Health insurance (80 €/month)</td>
+            <td>400 €</td>
+          </tr>
+          <tr>
+            <td>Accommodation (280 – 380 €/month)</td>
+            <td>1,900 €</td>
+          </tr>
+          <tr>
+            <td>Food (200 - 400 €/month)</td>
+            <td>2,000 €</td>
+          </tr>
+          <tr>
+            <td>Communication - Internet, cell phone (40 €/month)</td>
+            <td>200 €</td>
+          </tr>
+          <tr>
+            <td><strong>Total per semester (5 months)</strong></td>
+            <td><strong>≈ 250,000 Baht</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3. Requirement</h3>
+      <p>
+        The following is the minimum requirement for joining the exchange
+        program at FRA-UAS.
+      </p>
+      <ul>
+        <li>Studying in Year 3 Semester 1 of the SE program.</li>
+        <li>GPA at the end of Year 2 is 2.7 or higher.</li>
+        <li>Excellent English language skills</li>
+      </ul>
+
+      <p>
+        Those who do not satisfy these requirements may be accepted at the
+        discretion of the International College and FRA-UAS.
+      </p>
+
+      <h3>4. Application</h3>
+      <p>The application procedure is as follows:</p>
+      <ul>
+        <li>
+          The candidate fills in the International College study abroad
+          application form:
+        </li>
+        <li>
+          <a href="https://goo.gl/HPqTbB">https://goo.gl/HPqTbB</a>
+        </li>
+        <li>
+          IC evaluates and selects the candidates and announces the result of
+          the selection.
+        </li>
+        <li>IC nominates the selected candidates to FRA-UAS</li>
+        <li>
+          The selected candidates complete the application on FRA-UAS website
+        </li>
+        <li>
+          <a
+            href="https://www.frankfurt-university.de/en/studies/international-office/incomings/exchange/"
+            >https://www.frankfurt-university.de/en/studies/international-office/incomings/exchange/</a
+          >
+        </li>
+        <li>
+          FRA-UAS emails each candidate an acceptance letter and an application
+          form for accommodations.
+        </li>
+        <li>Accepted candidates start applying for a student visa.</li>
+      </ul>
+    </div>
+
+    <!--Table and Procedure-->
+
+    <div class="parallax2">
+      <div class="parallaxOverlay2">
+
+        <div class="timetable">
+          <h3>Expense Estimation Table</h3>
+          <table align="center" border="1" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <th>Expense</th>
+                <th>
+                  Estimated cost / semester<br />
+                  (5 months)
+                </th>
+              </tr>
+              <tr>
+                <td>Round-trip flight ticket</td>
+                <td>47,000 THB</td>
+              </tr>
+              <tr>
+                <td>Semester ticket (covering public transport)</td>
+                <td>330 €</td>
+              </tr>
+              <tr>
+                <td>Health insurance (80 €/month)</td>
+                <td>400 €</td>
+              </tr>
+              <tr>
+                <td>Accommodation (280 – 380 €/month)</td>
+                <td>1,900 €</td>
+              </tr>
+              <tr>
+                <td>Food (200 - 400 €/month)</td>
+                <td>2,000 €</td>
+              </tr>
+              <tr>
+                <td>Communication - Internet, cell phone (40 €/month)</td>
+                <td>200 €</td>
+              </tr>
+              <tr>
+                <td><strong>Total per semester (5 months)</strong></td>
+                <td><strong>≈ 250,000 Baht</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--contact-->
+
+    <div
+      style="height: 100%; background-color: white; padding-bottom: 20px"
+      class="requirement"
+    >
+      <h3>5. Contact</h3>
+      <p>For all enquiries regarding the exchange study at FRA-UAS, contact</p>
+      <ul>
+        <li>Dr. Jochen Amrehn</li>
+        <li>Dr. Natthapong Jungteerapanich</li>
+      </ul>
+      <p><i>Useful Link here:</i></p>
+      <ul>
+        <li>
+          <a
+            href="https://www.fh-frankfurt.de/international/studieren_an_der_fh/austausch.html"
+            >International Office at FRA-UAS</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.fh-frankfurt.de/fachbereiche/fb2/lehreinheit_informatik/informatik.html"
+            >Computer Science Program at FRA-UAS</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.fh-frankfurt.de/international/studieren_an_der_fh/austausch/coursesandgrades/courses_taught_in_english.html"
+            >English taught courses at FRA-UAS</a
+          >
+        </li>
+      </ul>
+    </div>
+    </div>
+
+    <!----------Footer Section------------>
+    <footer class="footer">
+      <div class="footer-ultimate">
+        <div class="footer-container">
+          <div class="leftSide">
+            <div class="leftSide-container">
+              <div class="SchoolLogo">
+                <img src="images/seWithBg.png" alt="Logo" />
+              </div>
+              <button class="forumBtn">FORUM</button>
+              <div class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-envelope"></a>
+              </div>
+            </div>
+          </div>
+          <div class="rightSide">
+            <div class="rightSide-container">
+              <div class="categories1">
+                <h4>Information</h4>
+                <div class="footer-infomation-content">
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Program</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Admission</a
+                  >
+                  <a href="ContactPage.html"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+              <div class="categories2">
+                <h4>Quick Links</h4>
+                <div class="footer-quickLinks-content">
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >KMITL</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >SIIE</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >KMITL Library</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          &copy; 2023 Software Engineering, King Mongkut's Institute of
+          Technology Ladkrabang
+        </p>
+      </div>
+    </footer>
+
+    <script src="src/nav.js"></script>
+  </body>
+</html>

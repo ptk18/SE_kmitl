@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!---for icons (menu icon, dropdown arrow)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!---for font---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Cabin&family=Gabarito&family=Mitr:wght@400;500&family=Open+Sans:wght@500;600&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/31ced76bc2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!----our all css----->
+    <link rel="stylesheet" href="src/nav.css" />
+    <link rel="stylesheet" href="src/Internship1.css" />
+    <link rel="stylesheet" href="/frame.css">
+
+    <link rel="stylesheet" href="" />
+    <title>Internship Page</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="SELogo">
+          <a href="/index.html" ><img src="/images/se (1).png" alt="SE logo"></a>
+      </div>
+      <div class="middleNavTabs">
+          <div class="program">
+              <button class="programBtn hidden">Program<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
+                  <div class="program-content">
+                      <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering</a>
+                      <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering 2022</a>
+                      <a href="/GlasgowPage.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Double Degree Glasgow</a>
+                      <a href="/ExchangeStudy.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Exchange Program</a>
+                      <a href="/Internship1.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Interships</a>
+                  </div>
+          </div>
+              <a href="/Admission.html">Admission</a>
+              <div class="news">
+                  <button class="newsBtn hidden">News<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
+                  <div class="news-content">
+                      <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a>
+                      <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News & Announcements</a>
+                      <a href="#studentLife"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Student Life</a>
+                  </div>
+              </div>
+              <a href="/login.html">Forum</a>
+  
+      </div>
+      <div class="rightNavTabs">
+          <div class="innerRightNavTabs">
+              <a href="http://127.0.0.1:5500/login.html" class="nav-link">Log In</a>
+              <a href="/FAQ.html" class="nav-link">FAQ</a>
+              <a href="#search" class="nav-link searching">Search<i class="fa fa-search" style="padding-left:12px;"></i></a>
+              <form style="display: none;" class="search-form ">
+                  <input type="text" name="search" placeholder="Enter Keywords" id="myInput" onkeyup="myFunction2()">
+                  <a href="#search" style="border-bottom: none;" class="srchBtn"><i class="fa fa-search " id="searchBtn"></i></a>
+                  <div class="search-list">
+                      <ul id="myUL" style="list-style-type: none; padding-left: 5px;">
+                          <li><a href="/login.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Forum</a></li>
+                          <li><a href="/Admission.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Admission</a></li>
+                          <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a></li>
+                          <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News</a></li>
+                          <li><a href="/FAQ.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>FAQ</a></li>
+                          <li><a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Program</a></li>
+                      </ul>
+                      
+                  </div>
+              </form>
+          </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+    <!------------Body Container---------------->
+    <div class="fontstyle">
+      <div class="parallax">
+        <div class="parallaxOverlay">
+          <div class="cover_img">
+            <img src="images/SE wallpaper (6).png" width="100%" />
+          </div>
+
+          <div class="img_SE">
+            <img
+              src="https://curriculum.kmitl.ac.th/wp-content/uploads/2021/07/%E0%B8%8B%E0%B8%AD%E0%B8%9F%E0%B9%81%E0%B8%A7%E0%B8%A3%E0%B9%8C.png "
+            />
+          </div>
+          <div class="paraSE">
+            <blockquote>
+              <h3>
+                Required internship for B.Eng. Software Engineering students to
+                gain real-world experience and understand the software
+                engineer's role. Internship takes place in the second year, in
+                Thailand or abroad.
+              </h3>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <!--for requirement-->
+
+      <div
+        style="height: 100%; background-color: white; margin-top: 20px"
+        class="requirement"
+      >
+        <h2>1. Requirement</h2>
+        <h3>1.1 Duration and Timing</h3>
+        <p>
+          The internship takes place in the summer semester of Year 2 of the
+          program (late May - late July). The internship must consist of at
+          least 7 weeks of full-time work. It may be longer if you wish.
+        </p>
+
+        <h3>1.2 Type of Work</h3>
+        <p>
+          An internship provides a excellent opportunity for you to apply your
+          software engineering skills in the real world. The internship should
+          be practical software engineering work, either as an individual
+          project or as part of a larger project. You are expected to be
+          involved in the coding of a software application or a dynamic website.
+          Work consisting entirely of routine testing, internal support,
+          development of a static website, or data entry would not be suitable.
+          As a guideline, you are expected to carry out at least the following
+          amount of coding:
+        </p>
+        <br />
+        <table>
+          <tr>
+            <th>Type of Programming Languages</th>
+            <th>Amout of coding (not including comment)</th>
+          </tr>
+          <tr>
+            <td>
+              Type of Programming Languages Amout of coding (not including
+              comment) High-level languages, such as Python, Visual Basic,
+              ActionScript
+            </td>
+            <td>480 lines</td>
+          </tr>
+          <tr>
+            <td>HTML + Mark-up/Scripting languages, such as PHP, JavaScript</td>
+            <td>840 lines (not including the content of the web pages)</td>
+          </tr>
+          <tr>
+            <td>
+              Lower-level languages, such as C, C++, C#, Objective-C, Java
+            </td>
+            <td>840 lines</td>
+          </tr>
+        </table>
+        <br />
+        <p>
+          At the beginning of the internship, you and your employer should agree
+          on a clearly defined set of objectives of your work. It is acceptable
+          for the internship to change direction as time goes on, provided that
+          new objectives are identified and agreed. <br />
+          The following examples illustrate opposite ends of the spectrum of
+          suitable work:
+        </p>
+        <li>
+          At the one end of the spectrum, a student working for a large company
+          undertakes small clearly-defined pieces of work within a large
+          project. The student must first make a significant effort to
+          understand the existing framework, before going on to implementation
+          of software components that will fit into that framework.
+        </li>
+        <li>
+          At the other end of the spectrum, a student working for a small
+          company develops a complete software package. The student first
+          identifies the requirements, including a user interface design, and
+          continues development through to a prototype implementation.
+        </li>
+
+        <h3>1.3 Supervision</h3>
+        <p>
+          Normally, the host company of your internship will assign a member of
+          the company to be your supervisor. The supervisor will oversee the
+          progress of your work and give you advice. The International College
+          will also nominate one or more lecturers to be your internship
+          advisors who will be available for consultation to both you and the
+          company.
+        </p>
+      </div>
+
+      <div class="parallax1">
+        <div class="parallaxOverlay1"></div>
+      </div>
+
+      <!--Assessment-->
+      <div style="height: 100%; background-color: white" class="requirement">
+        <h3>2. Assessment</h3>
+        <p>
+          The internship is an assessed component of your study. During the
+          internship, the company will monitor your performance and then submit
+          their assessment to the International College. The company's
+          assessment will cover various aspects of your internship, including:
+        </p>
+        <ol>
+          <li>the quality and quantity of your work</li>
+          <li>your attendance record</li>
+          <li>
+            other attributes a good software engineer should possess, such as
+            punctuality, responsibility, human relations, creativity, etc.
+          </li>
+        </ol>
+
+        <p>
+          After your internship, you are required to submit an internship report
+          and give a presentation of your work and your internship experience to
+          the internship assessment committee. The committee will then evaluate
+          your internship and give you either grade S (Satisfactory) or U
+          (Unsatisfactory).
+        </p>
+
+        <h3>2.1 Internship report</h3>
+        <p>
+          An internship report is a short report (1,500 words or more)
+          detailing:
+        </p>
+        <ul>
+          <li>
+            a brief outline of the company (its size, its main activities, the
+            division or project in which you were employed, etc.);
+          </li>
+          <li>
+            the original placement description and objectives (and any later
+            changes to these);
+          </li>
+          <li>what you actually did;</li>
+          <li>
+            an honest evaluation of how successfully you achieved your
+            objectives;
+          </li>
+          <li>
+            a summary of what you learned from working in an industrial
+            environment (for example, tools, techniques, processes, group
+            working, deadlines);
+          </li>
+          <li>
+            a reflection on the value of the placement, and how it could have
+            been better.
+          </li>
+        </ul>
+
+        <i
+          >The report should not just be a detailed technical description of
+          what you did. The assessment committee is looking for a coherent,
+          literate report in order to understand how your project fitted into
+          the company you were working for, what you achieved, and your
+          reflections on how the internship fitted into your educational
+          experience.</i
+        >
+        <p>
+          Here are some hints on preparing a good report. Make sure that your
+          report has a clear logical structure – it should not be just an
+          unstructured flow of words telling a story. Avoid simply quoting PR
+          material about the organisation you worked for – think about what the
+          reader needs to know about the organisation in order to understand the
+          context of your work. Do not focus on minute technical detail
+          describing intricate pieces of code that you wrote.<br />
+          The biggest problem for most students seems to be reflecting on the
+          internship experience.<br />
+          Here are some questions you might like to think about in developing
+          this part of the report:
+        </p>
+        <ul>
+          <li>What new skills did you learn?</li>
+          <li>
+            What existing skills did you exercise or improve during the
+            internship?
+          </li>
+          <li>
+            Did your internship experience reinforce your existing knowledge?
+            (Did you observe techniques taught at the International College
+            actually used in practice?)
+          </li>
+          <li>
+            Were there any techniques that you would like to have known before
+            undertaking the internship?
+          </li>
+          <li>How could the internship experience have been improved?</li>
+          <li>
+            What knowledge and experience will you take forward as the most
+            important lessons from your internship?
+          </li>
+        </ul>
+        <i
+          >Both the content of the report and the quality of writing will be
+          taken into account.</i
+        >
+
+        <h3>2.2 Presentation</h3>
+        <p>
+          After your internship, you are required to present your work and your
+          experience during the internship to the assessment committee and your
+          colleagues. You should plan for a 20-minute presentation, which will
+          be followed by a 10-minute QA session.
+        </p>
+        <h3>2.3 Absence during internship</h3>
+        <p>
+          If, for any reason, you need to take a leave during the internship,
+          you must ask for permission from the company. You must also submit a
+          document supporting the request for your leave to your supervisor in
+          the company (or a person who makes a record of your attendance).
+          Absence without notice will result in failing the internship.
+        </p>
+      </div>
+
+      <!--Table and Procedure-->
+
+      <div class="parallax2">
+        <div class="parallaxOverlay2">
+          <div class="timetable_img">
+            <h3>3. Procedure and Timetable</h3>
+            <img src="images/Activities (1).png" width="100%" />
+          </div>
+
+          <div class="timetable">
+            <h3>3. Procedure and Timetable</h3>
+            <table>
+              <tr>
+                <th>Activities</th>
+                <th>Dates</th>
+              </tr>
+              <tr>
+                <td>
+                  <b> 1) Apply for internship</b> <br />Every student who is
+                  planning to undertake an internship in the upcoming summer
+                  semester must apply for an internship position in a company.
+                </td>
+                <td>Until 13 March 2020</td>
+              </tr>
+              <tr>
+                <td>
+                  <b> 2) Registration (on-line)</b> <br />Every student taking
+                  an internship must register for the course
+                  <i>"13016004 Software Industrial Internship in Summer"</i>.
+                  Registration is done on the University's on-line registry
+                  system. If this course is the only course you register in the
+                  summer semester, you will not be charged the tuition fee.
+                </td>
+                <td>3-5 June 2020</td>
+              </tr>
+              <tr>
+                <td>
+                  <b>3) Pre-internship meeting</b> <br />A meeting of all the
+                  students taking internships and the internship co-ordinator
+                  will be held near the end of semester 2.
+                </td>
+                <td>TBA</td>
+              </tr>
+              <tr>
+                <td>
+                  <b> 4) Internship </b> <br />During the internship, you are
+                  expected to work full time in the host company, and follow the
+                  normal regulation of the company. Your internship may begin
+                  before or finish after this period.
+                </td>
+                <td>Late May - Early August 2020 (tentative)</td>
+              </tr>
+              <tr>
+                <td>
+                  <b>5) Presentation and assessment </b><br />After completing
+                  the internship, you are required to submit an internship
+                  report and give a presentation to the internship assessment
+                  committee. Submit your internship report on Moodle<br />
+                  here:<a
+                    href="https://www.ic.kmitl.ac.th/moodle/course/view.php?id=27#section-5"
+                    >https://www.ic.kmitl.ac.th/moodle/course/view.php?id=27#section-5</a
+                  >no later than 15.30 on Fri 14 August 2020.
+                </td>
+                <td>Fri 14 August 2020 16.00-18.30 Room IC06</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!--
+
+    <div style="height: 600px; background-color: white" class="requirement">
+      <h3>3. Procedure and Timetable</h3>
+      <table>
+        <tr>
+          <th>Activities</th>
+          <th>Dates</th>
+        </tr>
+        <tr>
+          <td>
+            <b> 1) Apply for internship</b> <br />Every student who is planning
+            to undertake an internship in the upcoming summer semester must
+            apply for an internship position in a company.
+          </td>
+          <td>Until 13 March 2020</td>
+        </tr>
+        <tr>
+          <td>
+            <b> 2) Registration (on-line)</b> <br />Every student taking an
+            internship must register for the course
+            <i>"13016004 Software Industrial Internship in Summer"</i>.
+            Registration is done on the University's on-line registry system. If
+            this course is the only course you register in the summer semester,
+            you will not be charged the tuition fee.
+          </td>
+          <td>3-5 June 2020</td>
+        </tr>
+        <tr>
+          <td>
+            <b>3) Pre-internship meeting</b> <br />A meeting of all the students
+            taking internships and the internship co-ordinator will be held near
+            the end of semester 2.
+          </td>
+          <td>TBA</td>
+        </tr>
+        <tr>
+          <td>
+            <b> 4) Internship </b> <br />During the internship, you are expected
+            to work full time in the host company, and follow the normal
+            regulation of the company. Your internship may begin before or
+            finish after this period.
+          </td>
+          <td>Late May - Early August 2020 (tentative)</td>
+        </tr>
+        <tr>
+          <td>
+            <b>5) Presentation and assessment </b><br />After completing the
+            internship, you are required to submit an internship report and give
+            a presentation to the internship assessment committee. Submit your
+            internship report on Moodle<br />
+            here:<a
+              href="https://www.ic.kmitl.ac.th/moodle/course/view.php?id=27#section-5"
+              >https://www.ic.kmitl.ac.th/moodle/course/view.php?id=27#section-5</a
+            >no later than 15.30 on Fri 14 August 2020.
+          </td>
+          <td>Fri 14 August 2020 16.00-18.30 Room IC06</td>
+        </tr>
+      </table>
+    </div> -->
+
+      <!--contact-->
+
+      <div
+        style="height: 100%; background-color: white; padding-bottom: 20px"
+        class="requirement"
+      >
+        <h3>4. Contact</h3>
+        <p>Should you have any problem or question, please contact:</p>
+        <p>
+          Internship advisor :
+          <a href="natthapong.ju@kmitl.ac.th"></a>Dr.Natthapong JJungteerapanich
+        </p>
+        <h3>5. Download</h3>
+        <li>
+          <a
+            href="https://www.ic.kmitl.ac.th/moodle/mod/resource/view.php?id=2445"
+            download
+            >Template of the Internship Report ( Version 6 )</a
+          >
+        </li>
+        <li>
+          Examples of Internship Report:
+          <a
+            href="http://se.kmitl.ac.th/static/files/Internship-Report-Peeranat.pdf"
+            >1.2</a
+          >
+        </li>
+      </div>
+    </div>
+
+    <!----------Footer Section------------>
+   <footer class="footer">
+      <div class="footer-ultimate">
+        <div class="footer-container">
+          <div class="leftSide">
+            <div class="leftSide-container">
+              <div class="SchoolLogo">
+                <img src="images/seWithBg.png" alt="Logo" />
+              </div>
+              <button class="forumBtn">FORUM</button>
+              <div class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-envelope"></a>
+              </div>
+            </div>
+          </div>
+          <div class="rightSide">
+            <div class="rightSide-container">
+              <div class="categories1">
+                <h4>Information</h4>
+                <div class="footer-infomation-content">
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Program</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Admission</a
+                  >
+                  <a href="ContactPage.html"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+              <div class="categories2">
+                <h4>Quick Links</h4>
+                <div class="footer-quickLinks-content">
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >KMITL</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >SIIE</a
+                  >
+                  <a href="#"
+                    ><i
+                      class="fa fa-caret-right"
+                      style="padding-right: 6px; color: rgb(242, 168, 8)"
+                    ></i
+                    >KMITL Library</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          &copy; 2023 Software Engineering, King Mongkut's Institute of
+          Technology Ladkrabang
+        </p>
+      </div>
+    </footer>
+
+    <script src="src/nav.js"></script>
+    <script src="src/Internship.js"></script>
+  </body>
+</html>

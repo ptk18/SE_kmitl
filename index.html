@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <!---for icons (menu icon, dropdown arrow)-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!---for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <!---for font---->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Cabin&family=Gabarito&family=Merriweather&family=Mitr:wght@400;500&family=Open+Sans:wght@500;600&family=Poppins&family=Rubik&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Cabin&family=Gabarito&family=Merriweather&family=Mitr:wght@400;500&family=Open+Sans:wght@500;600&family=Poppins&family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Cabin&family=Gabarito&family=Mitr:wght@400;500&family=Open+Sans:wght@500;600&family=Rubik&display=swap" rel="stylesheet">
+    
     <!----our navbar css----->
     <link rel="stylesheet" href="frame.css">
 
@@ -20,39 +23,50 @@
 <body>
     <div class="topnav" id="myTopnav">
         <div class="SELogo">
-            <a href="#home" ><img src="/images/se (1).png" alt="SE logo"></a>
+            <a href="/index.html" ><img src="/images/se (1).png" alt="SE logo"></a>
         </div>
         <div class="middleNavTabs">
             <div class="program">
                 <button class="programBtn hidden">Program<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
                     <div class="program-content">
-                        <a href="#SE"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering</a>
-                        <a href="#SE2022"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering 2022</a>
-                        <a href="#glasgow"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Double Degree Glasgow</a>
-                        <a href="#studyabroad"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Exchange Program</a>
-                        <a href="#intership"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Interships</a>
+                        <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering</a>
+                        <a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Software Engineering 2022</a>
+                        <a href="/GlasgowPage.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Double Degree Glasgow</a>
+                        <a href="/ExchangeStudy.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Exchange Program</a>
+                        <a href="/Internship1.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Interships</a>
                     </div>
             </div>
-                <a href="#admission">Admission</a>
+                <a href="/Admission.html">Admission</a>
                 <div class="news">
                     <button class="newsBtn hidden">News<i class="fa fa-caret-down" style="padding-left: 6px;"></i></button>
                     <div class="news-content">
-                        <a href="#events"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a>
-                        <a href="#news_announce"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News & Announcements</a>
+                        <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a>
+                        <a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News & Announcements</a>
                         <a href="#studentLife"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Student Life</a>
                     </div>
                 </div>
-                <a href="#forum">Forum</a>
+                <a href="/login.html">Forum</a>
     
         </div>
         <div class="rightNavTabs">
             <div class="innerRightNavTabs">
-                <a href="#apply" class="nav-link">Apply</a>
-                <a href="#FAQ" class="nav-link">FAQ</a>
+                <a href="http://127.0.0.1:5500/login.html" class="nav-link">Log In</a>
+                <a href="/FAQ.html" class="nav-link">FAQ</a>
                 <a href="#search" class="nav-link searching">Search<i class="fa fa-search" style="padding-left:12px;"></i></a>
                 <form style="display: none;" class="search-form ">
-                    <input type="text" name="search" placeholder="Enter Keywords">
-                    <a href="#search" style="border-bottom: none;"><i class="fa fa-search " id="searchBtn"></i></a>
+                    <input type="text" name="search" placeholder="Enter Keywords" id="myInput" onkeyup="myFunction2()">
+                    <a href="#search" style="border-bottom: none;" class="srchBtn"><i class="fa fa-search " id="searchBtn"></i></a>
+                    <div class="search-list">
+                        <ul id="myUL" style="list-style-type: none; padding-left: 5px;">
+                            <li><a href="/login.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Forum</a></li>
+                            <li><a href="/Admission.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Admission</a></li>
+                            <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Events</a></li>
+                            <li><a href="/News.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>News</a></li>
+                            <li><a href="/FAQ.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>FAQ</a></li>
+                            <li><a href="/Program.html"><i class="fa fa-caret-right" style="padding-right: 6px; color:#FEFEFE"></i>Program</a></li>
+                        </ul>
+                        
+                    </div>
                 </form>
             </div>
         </div>
@@ -61,7 +75,6 @@
         </a>
     </div>
     
-    
     <!------------Body Container---------------->
     <div class="show_bodyBg">
         <!----------Overview Session----------->
@@ -69,7 +82,7 @@
             <div class="overview-first-row">
                 <div class="about-program">
                     <h2>SOFTWARE ENGINNERING, KMITL</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, cupiditate, eum est inventore quis culpa, ipsam aliquid molestias doloribus optio nihil. Alias quia ullam repudiandae minima tempore, est culpa id!</p>
+                    <p>Software engineering (SE) is an engineering discipline concerning all aspects of software production, including software analysis, design, development, testing, and deployment. SE requires profound abstract and logical thinking and the application of mathematics, logic, and computer science in order to produce efficient and reliable software with the available resources.</p>
                 </div>
                 <div class="program-video">
                     <iframe class="video"  src="https://www.youtube.com/embed/jP5O5ABfaao?si=PmlZCSPsIjMO7l3i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -79,18 +92,18 @@
                 <div class="logos">
                     <div class="logos-container">
                         <div class="SE-SIIE">
-                            <a href="#SE"><img src="/images/SElogo_thumbnail.png" alt="SE logo"></a>
-                            <a href="#SIIE"><img src="/images/SIIElogo_thumbnail.png" alt="SIIE logo" ></a>
+                            <a href="https://curriculum.kmitl.ac.th/curriculum/b-eng-software-engineering-international-program/"><img src="/images/SElogo_thumbnail.png" alt="SE logo"></a>
+                            <a href="https://engineer.kmitl.ac.th/"><img src="/images/SIIElogo_thumbnail.png" alt="SIIE logo" ></a>
                         </div>
                         <div class="Fight-kmitl">
-                            <a href="#KFight"><img src="https://engineer.kmitl.ac.th/wp-content/uploads/2020/11/go-300x212.png" alt="KMITL Fight"></a>
-                            <a href="KMITL"><img src="/images/KMITLlogo_thumbnail.png" alt="KMITL logo"></a>
+                            <a href="https://www.kmitl.ac.th/"><img src="https://engineer.kmitl.ac.th/wp-content/uploads/2020/11/go-300x212.png" alt="KMITL Fight"></a>
+                            <a href="https://www.kmitl.ac.th/"><img src="/images/KMITLlogo_thumbnail.png" alt="KMITL logo"></a>
                         </div>
                     </div>
                     
                 </div>
                 <div class="apply-button">
-                    <button class="applyBtn">APPLY NOW</button>
+                    <button class="applyBtn"><a style="text-decoration: none; color: white;" href="https://new.reg.kmitl.ac.th/admission/#/">APPLY NOW</a></button>
                 </div>
             </div>
         </div>
@@ -140,80 +153,163 @@
                     <p class="events-mini-header">Events</p>
                     <a href="#events" class="all-events"><p class="all-events-header">All Events</p></a>
                 </div>
-                <div class="event">
+                <div class="event" >
                     <div class="event-date-icon">
                         <div class="event-date-icon-container">
                             <div class="event-date-icon-mth">OCT</div>
                             <div class="event-date-icon-day">13</div>
                         </div>
-                    </div>
+                </div>
                     <div class="about-event">
-                        <b>Event Title Here</b>
-                        <p>13 OCT 2023</p>
+                        <b>KMITL Open House 2023</b>
+                        <p class="event-date-of-about-event" >8 OCT 2023</p>
                     </div>
                 </div>
+                <div class="event" >
+                    <div class="event-date-icon">
+                        <div class="event-date-icon-container">
+                            <div class="event-date-icon-mth">OCT</div>
+                            <div class="event-date-icon-day">13</div>
+                        </div>
+                </div>
+                    <div class="about-event">
+                        <b>KMITL Algriculture Market</b>
+                        <p class="event-date-of-about-event" >13 OCT 2023</p>
+                    </div>
+                </div>
+                <div class="event" >
+                    <div class="event-date-icon">
+                        <div class="event-date-icon-container">
+                            <div class="event-date-icon-mth">OCT</div>
+                            <div class="event-date-icon-day">13</div>
+                        </div>
+                </div>
+                    <div class="about-event">
+                        <b>2024 Early Admission Round</b>
+                        <p class="event-date-of-about-event" >13 OCT 2023</p>
+                    </div>
+                </div>
+                <div class="event" >
+                    <div class="event-date-icon">
+                        <div class="event-date-icon-container">
+                            <div class="event-date-icon-mth">OCT</div>
+                            <div class="event-date-icon-day">13</div>
+                        </div>
+                </div>
+                    <div class="about-event">
+                        <b>KMITL Graduation Ceremony</b>
+                        <p class="event-date-of-about-event" >13 OCT 2023</p>
+                    </div>
+                </div>
+        
             </div>
         </div>
 
         <!----------SE Now (Activities gallary) Session----------->
         <div class="SE-now">
-            
+            <div class="SE-now-header">
+                <h1 class="SE-now-header-h1">SE NOW!</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid consequatur odio tempora corrupti, animi quae nulla voluptatibus porro perspiciatis aperiam, eum, saepe incidunt mollitia facere enim quia. Totam, quisquam pariatur.</p>
+            </div>
+            <div class="image-gallery">
+                <img src="https://curriculum.kmitl.ac.th/wp-content/uploads/2021/07/73145646_3150353818372866_313744831237062656_n-1024x682.jpg" alt="" class="image1">
+                <img src="https://scontent.fbkk28-1.fna.fbcdn.net/v/t39.30808-6/401063897_634993088847905_365423907470517685_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHN3AEpSbi0iH2R3FKQf4RrAGhba3EH3BAAaFtrcQfcEJVdSp0KN1Skr-mbVCDPZVVVhwmBF9XOWOvJanEB5NCX&_nc_ohc=cnBxmaJeI6gAX9GHhJh&_nc_ht=scontent.fbkk28-1.fna&oh=00_AfDifNoJKXxShPm3b3T1PpiOAsPCVFIWvPkorKIy8lBC2Q&oe=65554D72" alt="" class="image2">
+                <img src="https://curriculum.kmitl.ac.th/wp-content/uploads/2021/07/B.Eng_.-Software-Engineering-International-Program-6-1024x576.jpg" alt="" class="image3">
+                <img src="https://scontent.fbkk28-1.fna.fbcdn.net/v/t39.30808-6/396449457_627124232968124_5424519639134397252_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGZR9EcyVDAM_7q1DxpcLTHPs8t56eQ-co-zy3np5D5yhMwN851QxLCPADbSiWs9_MSO4YvoX5EIdNRTJFxVCuA&_nc_ohc=oBIiO0RCFgwAX-L9izZ&_nc_ht=scontent.fbkk28-1.fna&oh=00_AfDPu7Cd199ltx7SqTGV_IXeQ_Ybc6JJAfe7qFU2wboDxQ&oe=6555C450" alt="" class="image4">
+                <img src="https://curriculum.kmitl.ac.th/wp-content/uploads/2021/07/65943262_2842337759174475_156686656135495680_n.jpg" alt="" class="image5">
+            </div>
         </div>
 
         <!----------Carrer Opportunities Session----------->
-        <div class="carrer-oppo">
-
-        </div>
-    </div>
-    <div style="height: 200px;"></div>
-    
-    
-    <!----------Footer Section------------>
-    <footer class="footer">
-        <div class="footer-ultimate">
-            <div class="footer-container">
-                <div class="leftSide">
-                    <div class="leftSide-container">
-                        <div class="SchoolLogo">
-                            <img src="/images/seWithBg.png" alt="Logo">
-                        </div>
-                        <button class="forumBtn">FORUM</button>
-                        <div class="social-icons">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                            <a href="#" class="fa fa-envelope"></a>
-                        </div>
+        <div class="career-oppo">
+            <div class="career-oppo-header">
+                <h1 class="career-oppo-header-h1">CAREER OPPORTUNITIES</h1>
+                <p>There are abundant career opportunities for graduates from the software engineering program. With strong foundation in computer science, mathematics, and software engineering principles, graduates of the SE program may continue their studies at postgraduate level in various software engineering or computing related fields in universities worldwide.</p>
+                <div class="careers-in-SE">
+                    <div class="careers-in-SE-container">
+                        <ul class="careers-in-SE-catagory1">
+                            <li><i class="fa fa-caret-right" style="padding-right: 6px; color:#F04E25"></i>Software engineers</li>
+                            <li><i class="fa fa-caret-right" style="padding-right: 6px; color:#F04E25"></i>Software architects</li>
+                            <li><i class="fa fa-caret-right" style="padding-right: 6px; color:#F04E25"></i>Software developers</li>
+                        </ul>
+                        <ul class="careers-in-SE-catagory2">
+                            <li><i class="fa fa-caret-right" style="padding-right: 6px; color:#F04E25"></i>IT analysts and designers</li>
+                            <li><i class="fa fa-caret-right" style="padding-right: 6px; color:#F04E25"></i>IT consultants</li>
+                            <li><i class="fa fa-caret-right" style="padding-right: 6px; color:#F04E25"></i>Software entrepreneurs</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="rightSide">
-                    <div class="rightSide-container">
-                        <div class="categories1">
-                            <h4>Information</h4>
-                            <div class="footer-infomation-content">
-                                <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Program</a>
-                                <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Admission</a>
-                                <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Contact Us</a>
-                            </div>
+                
+            </div>
+            <div class="dashboard">
+                <div class="dashboard-students">
+                    <i class="fa-solid fa-users" style="font-size:36px;"></i>
+                    <h3 style="z-index: -1; margin-top: 0px; margin-bottom: 0px;">500+</h3>
+                    <h3 style="z-index: -2; margin-top: 0px">Students</h3>
+                </div>
+                <div class="dashboard-graduates">
+                    <i class='fas fa-user-graduate' style='font-size:36px'></i>
+                    <h3 style="z-index: -1; margin-top: 0px; margin-bottom: 0px;">300+</h3>
+                    <h3 style="z-index: -2; margin-top: 0px">Graduates</h3>
+                </div>
+                <div class="dashboard-students-glasglow">
+                    <i class='fas fa-school' style='font-size:36px'></i>
+                    <h3 style="z-index: -1; margin-top: 0px; margin-bottom: 0px;">30+</h3>
+                    <h4 style="z-index: -2; margin-top: 0px; margin-bottom: 0px;">Students</h4>
+                    <h4 style="z-index: -2; margin-top: 0px">in Glasglow</h4>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+<!----------Footer Section------------>
+<footer class="footer">
+    <div class="footer-ultimate">
+        <div class="footer-container">
+            <div class="leftSide">
+                <div class="leftSide-container">
+                    <div class="SchoolLogo">
+                        <a href="/index.html"><img src="/images/seWithBg.png" alt="Logo"></a>
+                    </div>
+                    <button class="forumBtn"><a href="/login.html">FORUM</a></button>
+                    <div class="social-icons">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-envelope"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rightSide">
+                <div class="rightSide-container">
+                    <div class="categories1">
+                        <h4>Information</h4>
+                        <div class="footer-infomation-content">
+                            <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Program</a>
+                            <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Admission</a>
+                            <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>Contact Us</a>
                         </div>
-                        <div class="categories2">
-                            <h4>Quick Links</h4>
-                            <div class="footer-quickLinks-content">
-                                <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>KMITL</a>
-                                <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>SIIE</a>
-                                <a href="#"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>KMITL Library</a>
-                            </div>
+                    </div>
+                    <div class="categories2">
+                        <h4>Quick Links</h4>
+                        <div class="footer-quickLinks-content">
+                            <a href="https://www.kmitl.ac.th/"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>KMITL</a>
+                            <a href="https://engineer.kmitl.ac.th/"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>SIIE</a>
+                            <a href="https://www.kllc.kmitl.ac.th/"><i class="fa fa-caret-right" style="padding-right: 6px; color:rgb(242, 168, 8)"></i>KMITL Library</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <p class="copyright">&copy; 2023 Software Engineering, King Mongkut's Institute of Technology Ladkrabang</p>
         </div>
-        
-        
-        
-    </footer>
+        <p class="copyright">&copy; 2023 Software Engineering, King Mongkut's Institute of Technology Ladkrabang</p>
+    </div>
     
-    <script src="frame.js"></script>
+    
+    
+</footer>
+
+<script src="frame.js"></script>
 </body>
 </html>
